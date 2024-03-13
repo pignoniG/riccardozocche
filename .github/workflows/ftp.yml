@@ -12,6 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ftp.riccardozocche.com
-        username: 
-        server-dir: public_html/wp-content/themes/francescobertele/
+        username: riccard9
+        server-dir: public_html/wp-content/themes/riccardozocche/
         password: ${{ secrets.FTP_PASSWORD }}
