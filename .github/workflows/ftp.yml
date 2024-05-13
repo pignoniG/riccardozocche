@@ -1,17 +1,18 @@
 on: push
-name: Publish Website
+name: Deploy website on push
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Get latest code
+      uses: actions/checkout@v4
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        fetch-depth: 2
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      with:
-        server: ftp.riccardozocche.com
-        username: riccard9
+        server: amy.svrsh.com
+        username: developer@riccardozocche.com
         server-dir: public_html/wp-content/themes/riccardozocche/
+        timeout: 40000
         password: ${{ secrets.FTP_PASSWORD }}
