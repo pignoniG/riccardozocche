@@ -85,24 +85,24 @@
       overflow: hidden;
     }
 
-    div.conten_protect_infocard{
+    div.conten_project_infocard{
       font-size: 13px;
       line-height: auto;
 
     }
 
-    div.conten_protect_infocard table, div.conten_protect_infocard tbody{
+    div.conten_project_infocard table, div.conten_project_infocard tbody{
       vertical-align: text-top;
       border: 0px transparent;
       background-color: transparent;
       text-align: left;
     }
 
-    div.conten_protect_infocard  tbody th, div.conten_protect_infocard  tbody td {
+    div.conten_project_infocard  tbody th, div.conten_project_infocard  tbody td {
       padding: 0rem 3rem 0rem 0rem;
     }
 
-    div.conten_protect_infocard table tbody tr:nth-child(even){
+    div.conten_project_infocard table tbody tr:nth-child(even){
       background-color: transparent;
     }
 

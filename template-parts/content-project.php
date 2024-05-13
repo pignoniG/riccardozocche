@@ -30,7 +30,7 @@
 		    <div class="project_top_gallery">
 		        <?php foreach( $project_top_gallery_images as $image_id ): ?>
 		            <div class="project_top_gallery_image" style="background-image:  url(' <?php echo wp_get_attachment_image_url( $image_id, $size ); ?>');">
-		            	
+
 		                
 		            </div>
 		        <?php endforeach; ?>
@@ -42,20 +42,20 @@
 
 	<div class="entry-content grid-x">
 
-		<div class="cell small-12 medium-12 large-3 large-order-1 small-order-2 conten_protect_infocard">
+		<div class="cell small-12 medium-12 large-3 large-order-1 small-order-2 conten_project_infocard">
 			
 
 			<?php 
-				$rows = get_field('protect_infocard');
+				$rows = get_field('project_infocard');
 				if( $rows ) {
 				    echo '<table>';
 
 				    foreach( $rows as $row ) {
 
 				        echo '<tr><td>';
-				            echo  $row['protect_info_title'];
+				            echo  $row['project_info_title'];
 				            echo '</td><td>';
-				            echo $row['protect_info_content'];
+				            echo $row['project_info_content'];
 				        echo '</td></tr>';
 				    }
 				    echo '</table>';
