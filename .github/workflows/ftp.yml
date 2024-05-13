@@ -11,7 +11,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.riccardozocche.com
+        server: amy.svrsh.com
         username: developer@riccardozocche.com
         server-dir: public_html/wp-content/themes/riccardozocche/
         timeout: 40000
