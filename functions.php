@@ -138,7 +138,7 @@ add_action( 'widgets_init', 'zocche_widgets_init' );
  * Enqueue scripts and styles.
  */
 function zocche_scripts() {
-	wp_enqueue_style( 'zocche-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'zocche-style', get_stylesheet_uri(), array() );
 	wp_enqueue_style( 'zocche-style-foundation', get_template_directory_uri() . '/css/foundation.css' );
 
 	wp_enqueue_script( 'zocche-jquery', "https://code.jquery.com/jquery-3.7.1.slim.min.js" );
@@ -150,18 +150,18 @@ function zocche_scripts() {
 
 	wp_style_add_data( 'zocche-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'zocche-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'zocche-navigation', get_template_directory_uri() . '/js/navigation.js', array(), true );
 	
-	wp_enqueue_script( 'zocche-customizer', get_template_directory_uri() . '/js/customizer.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'zocche-customizer', get_template_directory_uri() . '/js/customizer.js', array(), true );
 	
-	/** wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), _S_VERSION, true ); */
-	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), _S_VERSION, true );
+	/** wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true ); */
+	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true );
 	
 	wp_enqueue_style( 'zocche-style-app', get_template_directory_uri() . '/css/app.css' );
 
-	wp_enqueue_script( 'zocche-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'zocche-app', get_template_directory_uri() . '/js/app.js', array(), true );
 
-	wp_enqueue_script( 'zocche-foundation', get_template_directory_uri() . '/js/vendor/foundation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'zocche-foundation', get_template_directory_uri() . '/js/vendor/foundation.js', array(), true );
 
 
 
