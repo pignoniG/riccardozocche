@@ -139,15 +139,69 @@ add_action( 'widgets_init', 'zocche_widgets_init' );
  */
 function zocche_scripts() {
 	wp_enqueue_style( 'zocche-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'zocche-style-foundation', get_template_directory_uri() . '/css/foundation.css' );
+
+	wp_enqueue_script( 'zocche-jquery', "https://code.jquery.com/jquery-3.7.1.slim.min.js" );
+
+	wp_enqueue_style( 'zocche-style-typekit', 'https://use.typekit.net/new2xpo.css' );
+
+	
+	/** wp_enqueue_style( 'zocche-style-flickity', get_template_directory_uri() . '/css/flickity.css' ); */
+
 	wp_style_add_data( 'zocche-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'zocche-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	
+	wp_enqueue_script( 'zocche-customizer', get_template_directory_uri() . '/js/customizer.js', array(), _S_VERSION, true );
+	
+	/** wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), _S_VERSION, true ); */
+	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), _S_VERSION, true );
+	
+	wp_enqueue_style( 'zocche-style-app', get_template_directory_uri() . '/css/app.css' );
+
+	wp_enqueue_script( 'zocche-app', get_template_directory_uri() . '/js/app.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'zocche-foundation', get_template_directory_uri() . '/js/vendor/foundation.js', array(), _S_VERSION, true );
+
+
+
+
+
+
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'zocche_scripts' );
+
+
+
+function home_js(){
+    if ( is_front_page()  ){
+    	wp_enqueue_script( 'zocche-page-home', get_template_directory_uri() . '/js/page-home.js', array(), '1', true );
+    }
+}
+add_action('wp_enqueue_scripts', 'home_js');
+
+function ask_js(){
+    if ( is_page('ask') ){
+    	wp_enqueue_script( 'zocche-page-ask', get_template_directory_uri() . '/js/page-ask.js', array(), '1', true );
+    }
+}
+add_action('wp_enqueue_scripts', 'ask_js');
+
+function project_js(){
+    if(is_singular( 'project' )){
+    	
+    	wp_enqueue_script( 'zocche-single-project', get_template_directory_uri() . '/js/single-project.js', array(), _S_VERSION, true );
+
+    }
+}
+add_action('wp_enqueue_scripts', 'project_js');
+
 
 /**
  * Implement the Custom Header feature.

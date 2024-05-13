@@ -1,0 +1,202 @@
+/* General fine *//* General inizio */
+
+    /* General  general*/
+
+    body { 
+      font-family: "aktiv-grotesk",sans-serif;
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+
+    h1{
+      font-size: 30px;
+      line-height: 32px;
+    }
+    h2{
+      font-size: 30px;
+      line-height: 32px;
+    }
+    h3,p{
+      font-size: 18px;
+      line-height: auto;
+    }
+    h4{
+      font-size: 16px;
+      line-height: auto;
+    }
+    h5{
+      font-size: 13px;
+      line-height: auto;
+    }
+    h6{
+      font-size: 109px;
+      line-height: auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+  
+    }
+
+    /* General  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* General  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+        }
+
+    /* General  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+        }
+
+    /* General  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* General fine */
+
+/* project inizio */
+
+    /* project  general*/
+
+    div.project_top_gallery{
+      width: 100%;
+      overflow: hidden;
+
+
+    }
+    div.project_top_gallery_image{
+      width: calc( 100vw - 20px);
+      height: calc( 50vw - 20px);
+      background-size: cover;
+    }
+
+    div.project_bottom_gallery{
+      width: 100%;
+      overflow: hidden;
+    }
+
+    div.conten_protect_infocard{
+      font-size: 13px;
+      line-height: auto;
+
+    }
+
+    div.conten_protect_infocard table, div.conten_protect_infocard tbody{
+      vertical-align: text-top;
+      border: 0px transparent;
+      background-color: transparent;
+      text-align: left;
+    }
+
+    div.conten_protect_infocard  tbody th, div.conten_protect_infocard  tbody td {
+      padding: 0rem 3rem 0rem 0rem;
+    }
+
+    div.conten_protect_infocard table tbody tr:nth-child(even){
+      background-color: transparent;
+    }
+
+    div.entry-content figure {
+      margin: 0;
+        text-align: center;
+      }
+
+     div.entry-content figure figcaption{
+      text-align: left;
+     }
+
+
+    /* project  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* project  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+        }
+
+    /* project  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+        }
+
+    /* project  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* project fine */
+
+
+/* nav fine *//* nav inizio */
+
+    /* nav  general*/
+
+    #topLogo{
+        height: 75px;
+        fill: #1A9457;
+        display: flex;
+        float: left;
+        padding-top: 10px;
+    }
+    div.menu-menu-container{
+        display: flex;
+        float: right;
+    }
+
+
+    /* nav  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* nav  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+        }
+
+    /* nav  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+        }
+
+    /* nav  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* nav fine */
+
+
+/* XXXXX fine *//* XXXXX inizio */
+
+    /* XXXXX  general*/
+
+    /* XXXXX  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* XXXXX  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+        }
+
+    /* XXXXX  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+        }
+
+    /* XXXXX  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* XXXXX fine */
