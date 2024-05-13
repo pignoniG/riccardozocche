@@ -2,6 +2,10 @@
 
     /* General  general*/
 
+    div.otgs-development-site-front-end{
+        display: none;
+    }
+
     body { 
       font-family: "aktiv-grotesk",sans-serif;
       padding-left: 10px;
@@ -140,6 +144,7 @@
     /* nav  general*/
 
     #topLogo{
+
         height: 75px;
         fill: #1A9457;
         display: flex;
