@@ -29,6 +29,10 @@
 	
 
 		<nav id="site-navigation" class="main-navigation">
+			
+<?php $my_home_url = apply_filters( 'wpml_home_url', get_option( 'home' ) );?>
+
+<a href="<?php echo $my_home_url; ?>">
 
 
 <svg  id="topLogo" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -88,6 +92,7 @@
 		c1,0,1.4,0.4,1.4,1.2S323.4,79.4,322.5,79.5L322.5,79.5z"/>
 </g>
 </svg>
+</a>
 
 
 
