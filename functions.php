@@ -181,6 +181,8 @@ add_action( 'wp_enqueue_scripts', 'zocche_scripts' );
 
 function home_js(){
     if ( is_front_page()  ){
+    	
+    	wp_enqueue_script( 'zocche-masonry', get_template_directory_uri() . '/js/vendor/masonry.pkgd.min.js', array(), '1', true );
     	wp_enqueue_script( 'zocche-page-home', get_template_directory_uri() . '/js/page-home.js', array(), '1', true );
     }
 }
@@ -201,6 +203,36 @@ function project_js(){
     }
 }
 add_action('wp_enqueue_scripts', 'project_js');
+
+
+
+function mytranslate($string)
+{
+
+	$arrayString=  explode(" | ", $string );
+	$retval=$arrayString[0];
+	if (ICL_LANGUAGE_CODE=="it") {
+		if ($arrayString[1]) {
+			$retval=$arrayString[1];
+		}
+	}
+   
+    return $retval;
+}
+function mytranslate_force($string,$lang)
+{
+
+	$arrayString=  explode(" | ", $string );
+	$retval=$arrayString[0];
+	if ($lang=="it") {
+		if ($arrayString[1]) {
+			$retval=$arrayString[1];
+		}
+		
+	}
+   
+    return $retval;
+}
 
 
 /**

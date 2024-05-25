@@ -225,7 +225,123 @@
 /* nav fine */
 
 
-/* XXXXX fine *//* XXXXX inizio */
+/* Home inizio */
+
+    /* Home  general*/
+    div.home_grid_item {
+        width: calc( (100vw - 80px) /3 );
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+    div.home_grid_item:first-of-type{
+        margin-top: calc( (75vw - 80px) /6);
+    }
+    
+    div.home_grid_item.home_element_project,
+    div.home_grid_item.home_element_product,
+    div.home_grid_item.home_element_sheet.cliccable
+    {
+        cursor: pointer;
+    }
+
+    div.home_grid_item.home_element_project:hover img,
+    div.home_grid_item.home_element_product:hover img{
+         -webkit-filter: blur(4px);
+    }
+    div.home_grid_item.home_element_sheet:hover h3{
+        text-decoration:underline;
+    }
+
+    div.home_grid_item.home_element_project h3,
+    div.home_grid_item.home_element_product h3{
+        margin-top: 8px;
+    }
+
+   
+
+    div.home_grid_item.home_element_sheet{
+        height: calc( (75vw - 80px) /3 );
+        padding: 20px;
+    }
+    div.home_grid_item.home_element_sheet h2{
+        text-transform: uppercase;
+    }
+    div.home_grid_item.home_element_sheet h3{
+        position: absolute;
+        bottom: 5px;
+    }
+
+
+    .green{
+        color: #F4A6B4;
+        background-color: #1A9457;
+    }
+    .pink{
+        color: #1A9457;
+        background-color: #F4A6B4;
+    }
+    .blue{
+        color: #FFD900;
+        background-color: #45C2E0;
+    }
+    .yellow{
+        color: #45C2E0;
+        background-color: #FFD900;
+    }
+    .brown{
+        color:  #F4A6B4;
+        background-color: #9E4D3B;
+    }
+    
+    /* Home  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* Home  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+
+            div.home_grid_item {
+                width: calc( (100vw - 60px) /2 );
+                margin: 10px;
+            }
+            div.home_grid_item:first-of-type{
+                margin-top: calc( (75vw - 60px) /4 );
+            }
+    
+            div.home_grid_item.home_element_sheet{
+                height: calc( (75vw - 60px) /2 );
+                padding: 20px;
+            }
+        }
+
+    /* Home  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+            div.home_grid_item {
+                width: calc( (100vw - 40px)  );
+                margin: 10px;
+            }
+            div.home_grid_item.home_element_sheet{
+                height: calc( (75vw - 40px)  );
+                padding: 20px;
+            }
+            div.home_grid_item:first-of-type{
+                margin-top: 10px;
+            }
+    
+
+        }
+
+    /* Home  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* Home fine */
+
+/* XXXXX inizio */
 
     /* XXXXX  general*/
 
