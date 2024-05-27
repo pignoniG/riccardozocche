@@ -58,6 +58,10 @@
   
     }
 
+    .menu-item.wpml-ls-current-language{
+        text-decoration: underline;
+    }
+
        
 
     .button{
@@ -245,6 +249,9 @@
 
     .main-navigation li.menu-item.wpml-ls-item:nth-child(1) span.wpml-ls-display:after{
         content: "/";
+        text-decoration: none!important;
+        display: inline-block;
+    
     }
 
     
@@ -367,7 +374,7 @@
 
         @media only screen and (max-width: 63.9375em)  {
 
-            div.home_grid_item {
+            div.home_grid_item,div.works_grid_item {
                 width: calc( (100vw - 60px) /2 );
                 margin: 10px;
             }
@@ -384,7 +391,7 @@
     /* Home  mobile*/
 
         @media screen and (max-width: 39.9375em) {
-            div.home_grid_item {
+            div.home_grid_item,div.works_grid_item{
                 width: calc( (100vw - 40px)  );
                 margin: 10px;
             }
@@ -496,6 +503,21 @@
 /* Works inizio */
 
     /* Works  general*/
+
+    a.works_filter_button{
+        font-size: 18px;
+        color: black;
+
+        margin-right: 10px;
+    }
+
+    a.works_filter_button.selected{
+        text-decoration: underline;
+    }
+
+    a.works_filter_button:hover{
+         text-decoration: underline;
+    }
 
 
 
