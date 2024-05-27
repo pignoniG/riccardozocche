@@ -14,6 +14,16 @@
 
     }
 
+    hr.separator{
+        border-block-color: #F4A6B4; 
+        
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 100vw;
+    }
+
 
     a:visited {
     color: #000;
@@ -29,23 +39,60 @@
     }
     h3,p{
       font-size: 18px;
-      line-height: auto;
+      line-height: 1.3;
     }
     h4{
       font-size: 16px;
-      line-height: auto;
+      line-height: 1.3;
     }
     h5{
       font-size: 13px;
-      line-height: auto;
+      line-height: 1.3;
     }
     h6{
       font-size: 109px;
-      line-height: auto;
+      line-height: 1.3;
     }
 
     h1, h2, h3, h4, h5, h6 {
   
+    }
+
+       
+
+    .button{
+        font-size: 18px;
+        border-radius: 100px;
+        padding: 0.5em 1.2em;
+    }
+
+    .button.white{
+        color: #1A9457;
+        background-color: white;
+        border-color: #1A9457;
+    }
+    .button.white:hover{
+        color: white;
+        background-color: #1A9457;
+        border-color: #1A9457;
+    }
+
+    .button.green{
+        color: white;
+    }
+    .button.green:hover{
+        color: #1A9457;
+        background-color: white;
+        border-color: #1A9457;
+    }
+    .button.pink{
+
+    }
+    .button.pink:hover{
+        color: #F4A6B4;
+        background-color: white;
+        border-color: #1A9457;
+
     }
 
     /* General  extra medium*/
@@ -292,6 +339,22 @@
         color:  #F4A6B4;
         background-color: #9E4D3B;
     }
+
+    .green_txt{
+        color: #1A9457;
+    }
+    .pink_txt{
+        color: #F4A6B4;
+    }
+    .blue_txt{
+        color: #45C2E0;
+    }
+    .yellow_txt{
+        color: #FFD900;
+    }
+    .brown_txt{
+        color: #9E4D3B;
+    }
     
     /* Home  extra medium*/
 
@@ -340,6 +403,119 @@
 
 
 /* Home fine */
+
+
+/* Service inizio */
+
+    /* Service  general*/
+    div.service_grid{}
+
+    div.entry-content.grid-x.methodology_container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div.service_grid_item{
+        width: calc( (100vw - 80px) / 3 );
+       
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+    div.service_grid_item img{
+        margin-bottom: 15px;
+    }
+    div.methodology_gallery{
+        overflow: hidden;
+    }
+
+    div.methodology_gallery_image{
+        width: calc(66.6vw - 20px);
+        height: calc((66.6vw - 20px) / 1.5);
+        background-size: cover;
+    }
+    h3.methodology_gallery_caption{
+        margin-left: 20px;
+    }
+    h3.methodology_contact{
+        margin-top: 20px;
+    }
+
+    /* Service  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+
+           
+
+        }
+
+    /* Service  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+             
+             div.service_grid_item{
+                width: calc( (100vw - 60px) / 2 );
+                
+                margin: 10px;
+            }
+             div.methodology_gallery_image{
+                width: calc(100vw - 40px);
+                height: calc((100vw - 40px) / 1.5);
+
+            }
+            h3.methodology_gallery_caption{
+                margin-left: 0px;
+            }
+        
+
+        }
+
+    /* Service  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+
+             div.service_grid_item{
+                width: calc( (100vw - 40px)  );
+                height: initial!important;
+                margin: 10px;
+            }
+
+            
+
+
+        }
+
+    /* Service  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* Service fine */
+
+/* XXXXX inizio */
+
+    /* XXXXX  general*/
+
+    /* XXXXX  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* XXXXX  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+        }
+
+    /* XXXXX  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+        }
+
+    /* XXXXX  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* XXXXX fine */
 
 /* XXXXX inizio */
 

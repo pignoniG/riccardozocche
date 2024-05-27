@@ -155,7 +155,7 @@ function zocche_scripts() {
 	wp_enqueue_script( 'zocche-customizer', get_template_directory_uri() . '/js/customizer.js', array(), true );
 	
 	/** wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true ); */
-	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true );
+	
 	
 	wp_enqueue_style( 'zocche-style-app', get_template_directory_uri() . '/css/app.css' );
 
@@ -188,15 +188,20 @@ function home_js(){
 }
 add_action('wp_enqueue_scripts', 'home_js');
 
-function ask_js(){
-    if ( is_page('ask') ){
-    	wp_enqueue_script( 'zocche-page-ask', get_template_directory_uri() . '/js/page-ask.js', array(), '1', true );
+
+
+function services_js(){
+    if ( is_page('services') or  is_page('servizi')){
+    	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true );
+    	wp_enqueue_script( 'zocche-page-services', get_template_directory_uri() . '/js/page-services.js', array(), '1', true );
+    	wp_enqueue_script( 'zocche-masonry', get_template_directory_uri() . '/js/vendor/masonry.pkgd.min.js', array(), '1', true );
     }
 }
-add_action('wp_enqueue_scripts', 'ask_js');
+add_action('wp_enqueue_scripts', 'services_js');
 
 function project_js(){
     if(is_singular( 'project' )){
+    	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true );
     	
     	wp_enqueue_script( 'zocche-single-project', get_template_directory_uri() . '/js/single-project.js', array(), _S_VERSION, true );
 
