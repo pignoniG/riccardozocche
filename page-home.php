@@ -46,7 +46,17 @@ get_header();
         			$project_permalink = get_permalink( $home_element_project_link->ID );
         			$title = get_the_title( $home_element_project_link->ID );
         			$project_year = get_field( 'project_year', $home_element_project_link->ID );
-        			$project_location = get_field( 'project_location', $home_element_project_link->ID );
+        			
+    				if ($project_year){
+    					 $project_year=  ", ".$project_year;
+    				}
+    				$project_location = get_field( 'project_location', $home_element_project_link->ID );
+    
+    				if ($project_location){
+    					 $project_location=  ", ".$project_location;
+    				}
+
+        			
         			?>
 
 
@@ -54,7 +64,7 @@ get_header();
 
         				<img src=" <?php echo wp_get_attachment_image_url( $home_element_project_image, $size ); ?>">
 
-        				<h3> <?php echo $title.', '.$project_location.', '.$project_year;?> </h3>
+        				<h3> <?php echo $title.$project_location.$project_year;?> </h3>
 
         			</div><?php
         		

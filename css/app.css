@@ -275,7 +275,7 @@
 /* Home inizio */
 
     /* Home  general*/
-    div.home_grid_item {
+    div.home_grid_item , div.works_grid_item{
         width: calc( (100vw - 80px) /3 );
         margin: 10px;
         margin-bottom: 50px;
@@ -286,12 +286,14 @@
     
     div.home_grid_item.home_element_project,
     div.home_grid_item.home_element_product,
+    div.works_grid_item,
     div.home_grid_item.home_element_sheet.cliccable
     {
         cursor: pointer;
     }
 
     div.home_grid_item.home_element_project:hover img,
+    div.works_grid_item:hover img,
     div.home_grid_item.home_element_product:hover img{
          -webkit-filter: blur(4px);
     }
@@ -491,31 +493,33 @@
 
 /* Service fine */
 
-/* XXXXX inizio */
+/* Works inizio */
 
-    /* XXXXX  general*/
+    /* Works  general*/
 
-    /* XXXXX  extra medium*/
+
+
+    /* Works  extra medium*/
 
         @media only screen and (min-width: 63.9375em)  {
         }
 
-    /* XXXXX  medium*/
+    /* Works  medium*/
 
         @media only screen and (max-width: 63.9375em)  {
         }
 
-    /* XXXXX  mobile*/
+    /* Works  mobile*/
 
         @media screen and (max-width: 39.9375em) {
         }
 
-    /* XXXXX  extra mobile*/
+    /* Works  extra mobile*/
         @media screen and (max-width: 28.125em) {
         }
 
 
-/* XXXXX fine */
+/* Works fine */
 
 /* XXXXX inizio */
 
