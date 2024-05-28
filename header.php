@@ -96,7 +96,7 @@
 
 
 
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fi-align-justify"></i></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fi-plus"></i><i class="fi-minus" style="display: none;"></i></button>
 			<?php
 			wp_nav_menu(
 				array(

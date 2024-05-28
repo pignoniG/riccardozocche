@@ -31,6 +31,9 @@
     a{
         color: #000;
     }
+    a:hover{
+        text-decoration: underline;
+    }
     
     h1{
       font-size: 30px;
@@ -72,7 +75,7 @@ button.menu-toggle{
     width: 38px;
     font-size: 32px;
 }
-       
+
 
     .button{
         font-size: 18px;
@@ -213,6 +216,14 @@ button.menu-toggle{
     #topLogo{
 
         height: 75px;
+        fill: #1A9457;
+        display: flex;
+        float: left;
+        padding-top: 0px;
+    }
+    #bottom_logo{
+
+        height: 110px;
         fill: #1A9457;
         display: flex;
         float: left;
@@ -559,10 +570,134 @@ button.menu-toggle{
     /* Works  extra mobile*/
         @media screen and (max-width: 28.125em) {
         }
-
+         
 
 /* Works fine */
 
+/* footer inizio */
+a.arch_button{
+    float: left;
+    width: 120px;
+    
+    overflow: hidden;
+}
+a.arch_button svg{
+    font-size: 18px;
+    fill: #F4A6B4;
+    margin-top: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+a.arch_button:hover svg{
+
+    text-decoration: underline;
+
+}
+
+div.footer_containers{
+    max-width: calc((100vw - 210px)/3);
+    display: block;
+    float: left;
+    padding-left: 2vw;
+}
+
+div.footer_containers.buttons{
+    max-width: initial;
+    float: right;
+    padding-right: 2vw;
+    padding-left: 0px;
+    
+
+}
+
+
+div.footer_containers  a:hover{
+    text-decoration: none;
+}
+div.footer_containers  a{
+    text-decoration: underline;
+}
+
+
+
+div.footer_containers h3,div.footer_containers h4{
+display: block;
+
+}
+div.footer_containers.left{
+
+}
+div.footer_containers.right{
+    
+}
+
+    /* footer  general*/
+
+    /* footer  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* footer  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+
+            div.footer_containers{
+                max-width: calc((100vw - 97px)/2);
+              
+                display: block;
+                float: left;
+                padding-left: 30px;
+
+
+            }
+            
+            div.footer_containers.buttons{
+                max-width: initial;
+                float: right;
+                margin-top: 50px;
+                padding-right: 0vw;
+                padding-left: 0px;
+                margin-right: calc((100vw - 390px)/2);
+                                
+            
+            }
+        }
+
+    /* footer  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+
+            div.footer_containers{
+                max-width: calc(100vw );
+                margin-top: 10px;
+              
+                display: block;
+                float: left;
+                padding-left: 10px;
+            }
+
+             div.footer_containers:first-of-type{
+    
+                margin-top: 0px;}
+
+             div.footer_containers.buttons{
+    
+                margin-top: 20px;}
+
+            #bottom_logo{
+                display: none;
+            }
+            
+        }
+
+    /* footer  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+/* footer fine */
 /* XXXXX inizio */
 
     /* XXXXX  general*/
