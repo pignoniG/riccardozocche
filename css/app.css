@@ -26,7 +26,10 @@
 
 
     a:visited {
-    color: #000;
+        color: #000;
+    }
+    a{
+        color: #000;
     }
     
     h1{
@@ -62,6 +65,13 @@
         text-decoration: underline;
     }
 
+button.menu-toggle{
+    float: right;
+
+    height: 38px;
+    width: 38px;
+    font-size: 32px;
+}
        
 
     .button{
@@ -228,6 +238,10 @@
         font-size: 18px;
         text-transform: lowercase;
     } 
+    .main-navigation li.menu-item.current-menu-item,.main-navigation li.menu-item:hover {
+        text-decoration: underline;
+    }
+  
     .main-navigation li.menu-item.wpml-ls-item:nth-child(1) a{
         padding-right: 0;
     }
@@ -259,16 +273,22 @@
     /* nav  extra medium*/
 
         @media only screen and (min-width: 63.9375em)  {
+             .main-navigation li.menu-item{
+            padding-left: 30px;}
         }
 
     /* nav  medium*/
 
         @media only screen and (max-width: 63.9375em)  {
+            .main-navigation li.menu-item{
+            padding-left: 15px;}
         }
 
     /* nav  mobile*/
 
         @media screen and (max-width: 39.9375em) {
+            .main-navigation li.menu-item{
+            padding-left: 0px;}
         }
 
     /* nav  extra mobile*/

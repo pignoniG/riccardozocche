@@ -155,6 +155,8 @@ function zocche_scripts() {
 	wp_enqueue_script( 'zocche-customizer', get_template_directory_uri() . '/js/customizer.js', array(), true );
 	
 	/** wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true ); */
+	wp_enqueue_style( 'zocche-style-fundation_icons', get_template_directory_uri() . '/assets/foundation-icons/foundation-icons.css' );
+
 	
 	
 	wp_enqueue_style( 'zocche-style-app', get_template_directory_uri() . '/css/app.css' );
