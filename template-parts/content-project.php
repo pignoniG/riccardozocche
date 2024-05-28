@@ -21,7 +21,6 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<?php zocche_post_thumbnail(); ?>
 
 	<?php 
 		$project_top_gallery_images = get_field('project_top_gallery');
