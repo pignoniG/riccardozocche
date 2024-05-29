@@ -350,6 +350,7 @@ button.menu-toggle{
     div.home_grid_item.home_element_sheet{
         height: calc( (75vw - 80px) /3 );
         padding: 20px;
+        position: relative;
     }
     div.home_grid_item.home_element_sheet h2{
         
@@ -458,7 +459,7 @@ button.menu-toggle{
 
     div.service_grid_item{
         width: calc( (100vw - 80px) / 3 );
-        float: left;
+        float: leftposition: relative;;
         margin: 10px;
         margin-bottom: 0px;
     }
