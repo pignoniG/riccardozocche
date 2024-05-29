@@ -316,6 +316,7 @@ button.menu-toggle{
     div.home_grid_item , div.works_grid_item{
         width: calc( (100vw - 80px) /3 );
         margin: 10px;
+        float: left;
         margin-bottom: 50px;
     }
     div.home_grid_item:first-of-type{
@@ -457,7 +458,7 @@ button.menu-toggle{
 
     div.service_grid_item{
         width: calc( (100vw - 80px) / 3 );
-       
+        float: left;
         margin: 10px;
         margin-bottom: 0px;
     }
