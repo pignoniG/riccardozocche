@@ -1,10 +1,11 @@
 $( document ).ready(
     function(){ 
 
-//  $('.home_grid').masonry({
+ $('.home_grid').isotope({
 
-//   itemSelector: '.home_grid_item'
-// });
+  itemSelector: '.home_grid_item',
+  transitionDuration: 0
+});
 
 
 });

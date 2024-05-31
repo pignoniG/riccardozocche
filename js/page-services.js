@@ -16,10 +16,11 @@ $( document ).ready(
             $(this).height(maxHeight+40);
         });
 
-//  $('.service_grid').masonry({
+ $('.service_grid').isotope({
+    transitionDuration: 0,
 
-//   itemSelector: '.service_grid_item'
-// });
+  itemSelector: '.service_grid_item'
+});
 
    var $top_gallery = $('.methodology_gallery').flickity({
       // options
