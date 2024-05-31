@@ -33,6 +33,7 @@
     }
     a:hover{
         text-decoration: underline;
+         color: #000;
     }
     
     h1{
@@ -150,9 +151,21 @@ button.menu-toggle{
       background-size: cover;
     }
 
+
+
     div.project_bottom_gallery{
       width: 100%;
+      height: 75vh;
+      margin-top: 40px;
+      margin-bottom: 40px;
       overflow: hidden;
+    }
+    div.project_bottom_gallery_image img{
+        max-height: 75vh;
+        width: auto;
+        max-width: calc( 100vw - 40px);
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     div.conten_project_infocard{
@@ -707,14 +720,58 @@ div.footer_containers.right{
     div.manifesto_cell{
         padding-left: 10px;
         padding-right: 10px;
-        line-break: anywhere;
-    }
-    div.manifesto_cell:nth-child(odd) {
-      
-    }
-    div.manifesto_cell:nth-child(even) {
+        margin-bottom: 20px;
        
     }
+    div.container_studio img{
+        margin-bottom: 20px;
+        padding-right: 20px;
+    }
+    div.container_bio{
+        margin-bottom: 20px;
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+
+    div.press_cell div.press_image{
+        
+        padding-right: 20px;
+        margin-bottom: 20px;
+
+    }
+    div.press_cell div.press_content{
+        margin-bottom: 20px;
+        position: relative;
+
+    }
+    div.press_cell div.press_content h3:last-of-type{
+        position: absolute;
+        bottom: 0px;
+    }
+    div.press_cell:hover div.press_content h3:last-of-type{
+        text-decoration: underline;
+    }
+
+    div.press_cell {
+        cursor: pointer;
+    }
+
+    div.press_cell:hover div.press_image
+    {
+         -webkit-filter: blur(4px);
+    }
+
+    div.about_menu ul{
+        list-style: none;
+    }
+    div.about_menu ul li a.selected{
+         text-decoration: underline;
+    }
+
+
+
+
 
     /* about  extra medium*/
 
@@ -723,7 +780,12 @@ div.footer_containers.right{
 
     /* about  medium*/
 
+
         @media only screen and (max-width: 63.9375em)  {
+            div.about_menu ul li{
+                margin-right: 10px;
+
+                display: inline-block;}
         }
 
     /* about  mobile*/

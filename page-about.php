@@ -41,10 +41,17 @@ get_header();
 
 			</div>
 
-			<div class="about_menu cell small-12 medium-12 large-1 large-order-2  medium-order-1 small-order-1">
+			<div class="about_menu cell small-12 medium-12 large-2 large-order-2  medium-order-1 small-order-1">
+				<ul>
+					<li><a data-filterkey="container_studio" class="selected" ><?php echo mytranslate("Studio | Studio") ;?></a></li>
+					
+					<li><a data-filterkey="container_manifesto " ><?php echo mytranslate("Manifest | Manifesto") ;?></a></li>
+					<li><a data-filterkey="container_press" ><?php echo mytranslate("Press | Press") ;?></a></li>
+				</ul>
 			</div>
 
-			<div class="container_manifesto cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-3 grid-x " >
+
+			<div style="display:none;" class="toggable_about container_manifesto cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-3 grid-x " >
 
 				<?php
 
@@ -80,7 +87,7 @@ get_header();
 				?>
 			</div>
 
-			<div class="container_studio cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-4 grid-x">
+			<div  class="container_studio toggable_about  cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-4 grid-x">
 				<?php
 
 				$about_studio_images = get_field('about_studio_images');
@@ -111,7 +118,7 @@ get_header();
 				</div>
 			</div>
 
-			<div class="container_press cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-5">
+			<div style="display:none;" class="container_press toggable_about  cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-5">
 
 				<?php
 
@@ -124,19 +131,23 @@ get_header();
 					        // Load sub field value.
 					        $titolo = get_sub_field('titolo');
 					        $testo = get_sub_field('testo');
-					        $immagine = get_sub_field('immagine');
+					        $immagine = get_sub_field('Immagine');
 					        $link = get_sub_field('link');
-					        $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+					        $size = 'large'; // (thumbnail, medium, large, full or custom size)
 					        // Do something, but make sure you escape the value if outputting directly...
 
 					        	?>
 					        	<div onclick="window.open('<?php echo $link;?>', '_blank');" class="press_cell cell small-12 medium-12 large-6 grid-x">
-					        		<div  style="background-image:  url(' <?php echo wp_get_attachment_image_url( $immagine, $size ); ?>');" class="press_image cell small-6 medium-6 large-6">
+
+					        		<div  class="press_image cell small-6 medium-6 large-6">
+
+					        			<img src="<?php echo wp_get_attachment_image_url( $immagine, $size ); ?>">
 					        		</div>
 
 					        		<div class="press_content cell small-6 medium-6 large-6">
 					        			<h3><?php echo $titolo ;?></h3>
 					        			<h3><?php echo $testo ;?></h3>
+					        			<h3><?php echo mytranslate("Find out more | Scorpi di più") ;?> </h3>
 
 					        		</div>	
 					        	</div>

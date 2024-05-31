@@ -201,11 +201,11 @@ add_action('wp_enqueue_scripts', 'works_js');
 
 function about_js(){
     if ( is_page('about')){
-    	
+    	wp_enqueue_script( 'zocche-isotope', get_template_directory_uri() . '/js/vendor/isotope.pkgd.min.js', array(), '1', true );
     	wp_enqueue_script( 'zocche-page-about', get_template_directory_uri() . '/js/page-about.js', array(), '1', true );
     }
 }
-add_action('wp_enqueue_scripts', 'works_js');
+add_action('wp_enqueue_scripts', 'about_js');
 
 function services_js(){
     if ( is_page('services') or  is_page('servizi')){

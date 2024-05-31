@@ -1,11 +1,12 @@
 $( document ).ready(
     function(){ 
 
- $('.home_grid').isotope({
+ var $grid =$('.home_grid').isotope({
 
   itemSelector: '.home_grid_item',
   transitionDuration: 0
 });
+
 
 
 });

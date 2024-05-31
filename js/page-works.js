@@ -26,6 +26,10 @@ $( ".works_filter_button" ).each(function(index) {
     });
 });
 
+ $grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
+
 
 
 });
