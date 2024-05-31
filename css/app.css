@@ -173,6 +173,9 @@ button.menu-toggle{
       line-height: auto;
 
     }
+    div.conten_project_body{
+        margin-bottom: 20px;
+    }
 
     div.conten_project_infocard table, div.conten_project_infocard tbody{
       vertical-align: text-top;
