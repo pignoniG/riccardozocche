@@ -26,6 +26,7 @@ $( "div.about_menu a" ).each(function(index) {
  var $grid = $('.container_manifesto').isotope({
 
   itemSelector: '.manifesto_cell',
+  percentPosition: true,
   transitionDuration: 0
 });
 

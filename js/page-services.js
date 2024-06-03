@@ -49,6 +49,7 @@ $( document ).ready(
 
 var $grid = $('.service_grid').isotope({
     transitionDuration: 0,
+    percentPosition: true,
 
   itemSelector: '.service_grid_item'
 });

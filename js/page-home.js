@@ -4,7 +4,9 @@ $( document ).ready(
  var $grid =$('.home_grid').isotope({
 
   itemSelector: '.home_grid_item',
-  transitionDuration: 0
+  percentPosition: true,
+  transitionDuration: 0,
+
 });
 
 
