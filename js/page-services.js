@@ -54,13 +54,23 @@ var $grid = $('.service_grid').isotope({
 });
 
 $grid.imagesLoaded().progress( function() {
+     var maxHeight = -1;
+         $('.service_grid_item').each(function() {
+            $(this).height(0);
+        });
+
+        $('.service_grid_item').each(function() {
+            maxHeight = maxHeight > $(this).prop('scrollHeight') ? maxHeight : $(this).prop('scrollHeight');
+        });
+
+        $('.service_grid_item').each(function() {
+            $(this).height(maxHeight+40);
+        });
+
   $grid.isotope('layout');
 
 
-      setTimeout(() => {
-       $grid.isotope('layout');
-    
-    }, "100");
+
     
 });
 
@@ -79,4 +89,5 @@ $(window).on('resize', function () {
         $('.service_grid_item').each(function() {
             $(this).height(maxHeight+40);
         });
+         $grid.isotope('layout');
 });
