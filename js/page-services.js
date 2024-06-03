@@ -16,7 +16,7 @@ $( document ).ready(
             $(this).height(maxHeight+40);
         });
 
- $('.service_grid').isotope({
+ var $grid = $('.service_grid').isotope({
     transitionDuration: 0,
 
   itemSelector: '.service_grid_item'
@@ -53,6 +53,9 @@ $( document ).ready(
 
 
 
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
 
 });
 

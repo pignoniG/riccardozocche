@@ -9,6 +9,11 @@ $( document ).ready(
 
 
 
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
+
+
 });
 
 $(window).on('resize', function () {});

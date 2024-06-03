@@ -23,10 +23,15 @@ $( "div.about_menu a" ).each(function(index) {
     });
 });
 
- $('.container_manifesto').isotope({
+ var $grid = $('.container_manifesto').isotope({
 
   itemSelector: '.manifesto_cell',
   transitionDuration: 0
+});
+
+
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
 });
 
 

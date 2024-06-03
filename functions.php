@@ -183,6 +183,9 @@ add_action( 'wp_enqueue_scripts', 'zocche_scripts' );
 
 function home_js(){
     if ( is_front_page()  ){
+
+    	
+    	wp_enqueue_script( 'zocche-imloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array(), '1', true );
     	
     	wp_enqueue_script( 'zocche-isotope', get_template_directory_uri() . '/js/vendor/isotope.pkgd.min.js', array(), '1', true );
     	wp_enqueue_script( 'zocche-page-home', get_template_directory_uri() . '/js/page-home.js', array(), '1', true );
@@ -192,6 +195,9 @@ add_action('wp_enqueue_scripts', 'home_js');
 
 function works_js(){
     if ( is_page('works') or  is_page('progetti')){
+
+    	wp_enqueue_script( 'zocche-imloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array(), '1', true );
+    	
     	
     	wp_enqueue_script( 'zocche-isotope', get_template_directory_uri() . '/js/vendor/isotope.pkgd.min.js', array(), '1', true );
     	wp_enqueue_script( 'zocche-page-works', get_template_directory_uri() . '/js/page-works.js', array(), '1', true );
@@ -201,6 +207,9 @@ add_action('wp_enqueue_scripts', 'works_js');
 
 function about_js(){
     if ( is_page('about')){
+
+    	wp_enqueue_script( 'zocche-imloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array(), '1', true );
+    	
     	wp_enqueue_script( 'zocche-isotope', get_template_directory_uri() . '/js/vendor/isotope.pkgd.min.js', array(), '1', true );
     	wp_enqueue_script( 'zocche-page-about', get_template_directory_uri() . '/js/page-about.js', array(), '1', true );
     }
@@ -209,6 +218,9 @@ add_action('wp_enqueue_scripts', 'about_js');
 
 function services_js(){
     if ( is_page('services') or  is_page('servizi')){
+
+    	wp_enqueue_script( 'zocche-imloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array(), '1', true );
+    	
     	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true );
     	wp_enqueue_script( 'zocche-page-services', get_template_directory_uri() . '/js/page-services.js', array(), '1', true );
     	wp_enqueue_script( 'zocche-isotope', get_template_directory_uri() . '/js/vendor/isotope.pkgd.min.js', array(), '1', true );
