@@ -55,7 +55,13 @@ var $grid = $('.service_grid').isotope({
 
 $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
-  console.log("loaded");
+
+
+      setTimeout(() => {
+       $grid.isotope('layout');
+    
+    }, "100");
+    
 });
 
 });
