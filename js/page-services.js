@@ -16,11 +16,6 @@ $( document ).ready(
             $(this).height(maxHeight+40);
         });
 
- var $grid = $('.service_grid').isotope({
-    transitionDuration: 0,
-
-  itemSelector: '.service_grid_item'
-});
 
    var $top_gallery = $('.methodology_gallery').flickity({
       // options
@@ -52,9 +47,15 @@ $( document ).ready(
 
 
 
+var $grid = $('.service_grid').isotope({
+    transitionDuration: 0,
+
+  itemSelector: '.service_grid_item'
+});
 
 $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
+  console.log("loaded");
 });
 
 });
