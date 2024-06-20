@@ -257,6 +257,7 @@ button.menu-toggle{
         padding: 10px;
         z-index: 10000000;
         background: rgba(255,255,255,0.95);
+        background: linear-gradient(rgba(255,255,255,0.98), 70%, transparent);
     }
 
     .main-navigation li.menu-item{

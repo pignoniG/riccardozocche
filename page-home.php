@@ -101,7 +101,7 @@ get_header();
         					<?php echo $home_element_sheet_text;?>
         				</h2>
         				<?php if ($home_element_sheet_link) { ?>
-        				<h3><?php echo mytranslate("Find out more | Scorpi di più") ;?> </h3>
+        				<h3><?php echo mytranslate("Find out more | Scopri di più") ;?> </h3>
         				<?php } ?>
         			</div><?php
         		
