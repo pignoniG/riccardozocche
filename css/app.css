@@ -736,6 +736,9 @@ div.footer_containers.right{
        padding-left: 10px;
        padding-right: 10px;
     }
+    div.container_bio img{
+        margin-bottom: 20px;
+    }
 
 
     div.press_cell div.press_image{

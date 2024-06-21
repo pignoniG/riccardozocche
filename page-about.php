@@ -146,7 +146,7 @@ get_header();
 
 					        		<div class="press_content cell small-6 medium-6 large-6">
 					        			<h3><?php echo $titolo ;?></h3>
-					        			<h3><?php echo $testo ;?></h3>
+					        			<h3 style="padding-bottom: 40px;"><?php echo $testo ;?></h3>
 					        			<h3><?php echo mytranslate("Find out more | Scopri di più") ;?> </h3>
 
 					        		</div>	

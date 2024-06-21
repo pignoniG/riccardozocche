@@ -65,6 +65,17 @@ get_header();
 			endif;
 			?>
 		</div>
+	
+
+		<div class="cell small-12 medium-12 large-12 large-order-3 small-order-3" style="text-align: center;">
+			<h3 class="methodology_contact green_txt">
+				<?php echo get_field('methodology_call_to_action');?>
+			</h3>
+			<a href="mailto:info@riccardozocche.com" class="button white"><?php echo mytranslate("Contact Us | Contattaci") ;?></a>
+		
+			
+		</div>
+
 
 		<hr class="separator">
 
@@ -102,14 +113,6 @@ get_header();
 			<h3 class="methodology_gallery_caption"></h3>
 		</div>
 
-		<div class="cell small-12 medium-12 large-12 large-order-3 small-order-3" style="text-align: center;">
-			<h3 class="methodology_contact green_txt">
-				<?php echo get_field('methodology_call_to_action');?>
-			</h3>
-			<a href="mailto:info@riccardozocche.com" class="button white"><?php echo mytranslate("Contact Us | Contattaci") ;?></a>
-		
-			
-		</div>
 
 
 
