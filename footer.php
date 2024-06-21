@@ -72,6 +72,14 @@ if( $rows ) {
 
 </div>
 <div class="reveal" id="newsletterModal" data-reveal>
+
+	<h3>Iscriviti alla Newsletter di Riccardo Zocche Studio!
+		<br>
+
+	Rimani aggiornato con le ultime novità dal mondo dell'architettura! Iscriviti alla nostra newsletter per ricevere in anteprima i progetti più recenti, gli eventi esclusivi e le notizie dal nostro studio.
+	<br>
+	Approfondisci le tematiche più attuali dell'architettura.<br>
+	Non perdere l'occasione di restare connesso con il nostro studio. Inserisci la tua email e iscriviti ora!</h3>
 	 <?php  echo do_shortcode('[newsletter]');?>
  
   <button class="close-button" data-close aria-label="Close modal" type="button">
