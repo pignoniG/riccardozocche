@@ -651,6 +651,42 @@ div.footer_containers.right{
     
 }
 
+div#newsletterModal.reveal{
+    background-color: #1A9457;
+    min-height: 50vh;
+    color: #F4A6B4;
+
+}
+div#newsletterModal.reveal input{
+    background-color: #1A9457;
+    border-color: #F4A6B4;
+    border: solid;
+    border-radius: 100px;
+    color: #F4A6B4;
+    
+    border-width: 2px;
+    accent-color: #F4A6B4;
+   
+
+}
+
+
+div#newsletterModal.reveal  div.tnp-field.tnp-field-email label{
+    display: none;
+}
+
+div#newsletterModal.reveal  div.tnp-field.tnp-field-email input::placeholder {
+  color: #F4A6B4;
+  opacity: 1; /* Firefox */
+}
+
+div#newsletterModal.reveal .close-button {
+  color: #F4A6B4;
+
+}
+
+  
+
     /* footer  general*/
 
     /* footer  extra medium*/

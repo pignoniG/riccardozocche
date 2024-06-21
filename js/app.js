@@ -7,9 +7,17 @@ $( document ).ready(
 
 
 });
+ $(document).foundation();
 
 });
 
+
+
+$( document ).on( 'click', ".close-button", function () {
+
+    $('.is-reveal-open').removeClass('is-reveal-open');
+
+} );
 
 
 $(window).on('resize', function () {});

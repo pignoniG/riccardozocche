@@ -164,6 +164,7 @@ function zocche_scripts() {
 	wp_enqueue_script( 'zocche-app', get_template_directory_uri() . '/js/app.js', array(), true );
 
 	wp_enqueue_script( 'zocche-foundation', get_template_directory_uri() . '/js/vendor/foundation.js', array(), true );
+	wp_enqueue_script( 'zocche-foundation_reveal', get_template_directory_uri() . '/js/vendor/foundation.reveal.js', array(), true );
 
 
 
