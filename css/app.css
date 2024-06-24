@@ -606,6 +606,7 @@ a.arch_button svg{
     margin-top: -5px;
     padding-left: 5px;
     padding-right: 5px;
+    overflow: visible;
 
 }
 a.arch_button:hover svg{
