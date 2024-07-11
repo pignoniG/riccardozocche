@@ -361,11 +361,24 @@ button.menu-toggle{
     div.home_grid_item.home_element_product h3{
         margin-top: 8px;
     }
+    h2.sheet_title{
+        margin-bottom: auto;
+    }
+    h2.sheet_text{
 
+        margin-top: 0;
+        margin-bottom: auto;
+        line-height: 1.2;
+    }
    
 
     div.home_grid_item.home_element_sheet{
         height: calc( (75vw - 80px) /3 );
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+
         padding: 20px;
         position: relative;
     }

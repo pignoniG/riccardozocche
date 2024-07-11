@@ -35,7 +35,15 @@ get_header();
         		$home_element_product_image = get_sub_field('home_element_product_image');
         		$home_element_sheet_color = get_sub_field('home_element_sheet_color');
         		$home_element_sheet_link = get_sub_field('home_element_sheet_link');
+        		
         		$home_element_sheet_text = get_sub_field('home_element_sheet_text');
+        		$home_element_sheet_title = get_sub_field('home_element_sheet_title');
+
+
+        	
+				
+
+        		
 
         		$size = 'large'; // (thumbnail, medium, large, full or custom size)
 
@@ -60,7 +68,7 @@ get_header();
         			?>
 
 
-        			<div  onclick="window.open('<?php echo $project_permalink;?>', '_blank');" class="home_grid_item <?php echo $home_element_type ?>">
+        			<div  onclick="window.open('<?php echo $project_permalink;?>', '_self');" class="home_grid_item <?php echo $home_element_type ?>">
 
         				<img src=" <?php echo wp_get_attachment_image_url( $home_element_project_image, $size ); ?>">
 
@@ -76,7 +84,7 @@ get_header();
         			$title = get_the_title( $home_element_product_link->ID );
         			
         			?>
-        			<div  onclick="window.open('<?php echo $product_permalink;?>', '_blank');" class="home_grid_item <?php echo $home_element_type ?>">
+        			<div  onclick="window.open('<?php echo $product_permalink;?>', '_self');" class="home_grid_item <?php echo $home_element_type ?>">
 
         				<img src=" <?php echo wp_get_attachment_image_url( $home_element_product_image, $size ); ?>">
 
@@ -92,14 +100,30 @@ get_header();
         		if ($home_element_type == "home_element_sheet") {
         			?><div 
 
-        				<?php if ($home_element_sheet_link) { ?>
-        					onclick="window.open('<?php echo $home_element_sheet_link;?>', '_blank');"
-        				<?php } ?>
+        		<?php
+
+        			if( $home_element_sheet_link ): 
+				    	$home_element_sheet_link_url = $home_element_sheet_link['url'];
+				    	$home_element_sheet_link_title = $home_element_sheet_link['title'];
+				    	$home_element_sheet_link_target = $home_element_sheet_link['target'] ? $home_element_sheet_link['target'] : '_self';
+				    	?>
+
+				    	onclick="window.open('<?php echo esc_url( $home_element_sheet_link_url );?>', '<?php echo esc_attr( $home_element_sheet_link_target ); ?>');"
+        				<?php endif; ?>
 
         				class="home_grid_item <?php echo $home_element_type.' '.$home_element_sheet_color;?> <?php if ($home_element_sheet_link) {  echo "cliccable"; } ?>">
-        				<h2>
-        					<?php echo $home_element_sheet_text;?>
-        				</h2>
+        				<?php if (!empty($home_element_sheet_title)): ?>
+        					<h2 class="sheet_title">
+
+        						<?php echo $home_element_sheet_title;?>
+        					</h2>
+        				<?php endif ?>
+        				<?php if (!empty($home_element_sheet_text)): ?>
+        					<h2 class="sheet_text">
+
+        						<?php echo $home_element_sheet_text;?>
+        					</h2>
+        				<?php endif ?>
         				<?php if ($home_element_sheet_link) { ?>
         				<h3><?php echo mytranslate("Find out more | Scopri di più") ;?> </h3>
         				<?php } ?>
