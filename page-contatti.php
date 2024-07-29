@@ -13,7 +13,7 @@
  */
 
 get_header();
-$idpage=123;
+
 ?>
 
 	<main id="primary" class="site-main">

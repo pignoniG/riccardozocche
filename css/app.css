@@ -681,7 +681,7 @@ div#newsletterModal.reveal{
     background-color: #1A9457;
     min-height: 50vh;
     color: #F4A6B4;
-    padding-top: 50px;
+    padding: 50px;
     border-color: transparent;
 
 }
@@ -967,6 +967,9 @@ display: block;
 margin: 0px;
 max-width: 500px;
 width: 100%;
+}
+div#newsletterModal.reveal div.tnp-subscription, div#newsletterModal.reveal form.tnp-subscription, div#newsletterModal.reveal form.tnp-profile{
+   margin: 0px; 
 }
 
     /* contacts  general*/

@@ -109,10 +109,22 @@ if( $rows ) {
 		</a>
 
 </div>
+<?php 
+		if(ICL_LANGUAGE_CODE=='en'){
+				$idpage=125;
+
+
+
+			} elseif(ICL_LANGUAGE_CODE=='it'){ 
+				$idpage=123;
+			
+
+			}
+			?>
 <div class="reveal" id="newsletterModal" data-reveal>
 
 	<h3><?php echo  get_field('newsletter_text',$post_id =$idpage);?></h3>
-	 <?php  echo do_shortcode('[newsletter]');?>
+	 <?php echo do_shortcode('[newsletter]');?>
  
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>

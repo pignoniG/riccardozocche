@@ -104,6 +104,18 @@
 					'menu_id'        => 'primary-menu',
 				)
 			);
+			
+			if(ICL_LANGUAGE_CODE=='en'){
+				$idpage=125;
+
+
+
+			} elseif(ICL_LANGUAGE_CODE=='it'){ 
+				$idpage=123;
+			
+
+			}
+
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
