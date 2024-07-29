@@ -244,6 +244,7 @@ button.menu-toggle{
         display: flex;
         float: left;
         padding-top: 0px;
+        padding-bottom: 10px;
     }
     div.menu-menu-container, div.menu-menu_en-container{
         display: flex;
