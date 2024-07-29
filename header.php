@@ -104,6 +104,7 @@
 					'menu_id'        => 'primary-menu',
 				)
 			);
+			$idpage=125;
 			
 			if(ICL_LANGUAGE_CODE=='en'){
 				$idpage=125;

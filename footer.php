@@ -8,6 +8,20 @@
  *
  * @package Zocche
  */
+$idpage=125;
+
+			if(ICL_LANGUAGE_CODE=='en'){
+				$idpage=125;
+
+
+
+			} elseif(ICL_LANGUAGE_CODE=='it'){ 
+				$idpage=123;
+			
+
+			}
+
+			?>
 
 ?>
 
