@@ -20,21 +20,21 @@
 
   <div class="cell small-12 medium-6 contacts_top_left">
   	<h1>
-  		<?php echo  get_field('contacts_top_left',$post_id =123);?> 
+  		<?php echo  get_field('contacts_top_left',$post_id =$idpage);?> 
   	</h1>
   </div>
   <div class="cell small-12 medium-6 contacts_top_right ">
   	<p><h1>
-  		<?php echo  get_field('contacts_top_right',$post_id =123)?>
+  		<?php echo  get_field('contacts_top_right',$post_id =$idpage)?>
   	</h1></p>
   </div>
 
 
-  <div style="margin-top: 20px;"class="cell small-6 large-3 small-offset-0 large-offset-6 "><h3><?php echo  get_field('contacts_bottom_left',$post_id =123);?></h3></div>
-  <div style="margin-top: 20px;" class="cell small-6 large-3"><h3><?php echo  get_field('contacts_bottom_right',$post_id =123);?></h3></div>
+  <div style="margin-top: 20px;"class="cell small-6 large-3 small-offset-0 large-offset-6 "><h3><?php echo  get_field('contacts_bottom_left',$post_id =$idpage);?></h3></div>
+  <div style="margin-top: 20px;" class="cell small-6 large-3"><h3><?php echo  get_field('contacts_bottom_right',$post_id =$idpage);?></h3></div>
 
   <div class="cell small-12 medium-12 large-6 small-offset-0 large-offset-6 newsletter_contacts" style="margin-top: 20px;">
-  	<h3><?php echo  get_field('newsletter_text',$post_id =123);?></h3>
+  	<h3><?php echo  get_field('newsletter_text',$post_id =$idpage);?></h3>
 	 <?php  echo do_shortcode('[newsletter]');?>
 
   </div>
@@ -111,7 +111,7 @@ if( $rows ) {
 </div>
 <div class="reveal" id="newsletterModal" data-reveal>
 
-	<h3><?php echo  get_field('newsletter_text',$post_id =123);?></h3>
+	<h3><?php echo  get_field('newsletter_text',$post_id =$idpage);?></h3>
 	 <?php  echo do_shortcode('[newsletter]');?>
  
   <button class="close-button" data-close aria-label="Close modal" type="button">

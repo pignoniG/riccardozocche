@@ -686,7 +686,8 @@ div#newsletterModal.reveal{
 
 }
 div#newsletterModal.reveal input,
-body.page-id-123 div.newsletter_contacts input{
+body.page-id-123 div.newsletter_contacts input,
+body.page-id-125 div.newsletter_contacts input,{
     background-color: #1A9457;
     border-color: #F4A6B4;
     border: solid;
@@ -698,7 +699,8 @@ body.page-id-123 div.newsletter_contacts input{
    
 }
 div#newsletterModal.reveal input.tnp-submit,
-body.page-id-123 div.newsletter_contacts input.tnp-submit{
+body.page-id-123 div.newsletter_contacts input.tnp-submit,
+body.page-id-125 div.newsletter_contacts input.tnp-submit{
     padding: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -707,7 +709,8 @@ body.page-id-123 div.newsletter_contacts input.tnp-submit{
     color: #1A9457;
 }
 div#newsletterModal.reveal input.tnp-submit:hover,
-body.page-id-123 div.newsletter_contacts input.tnp-submit:hover{
+body.page-id-123 div.newsletter_contacts input.tnp-submit:hover,
+body.page-id-125 div.newsletter_contacts input.tnp-submit:hover{
    color: #F4A6B4;
    background-color: #1A9457;
    border-color: #F4A6B4;
@@ -720,18 +723,21 @@ div.reveal-overlay{
 
 
 div#newsletterModal.reveal  div.tnp-field.tnp-field-email label,
-body.page-id-123 div.newsletter_contacts div.tnp-field.tnp-field-email label{
+body.page-id-123 div.newsletter_contacts div.tnp-field.tnp-field-email label,
+body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-field-email label{
     display: none;
 }
 
 div#newsletterModal.reveal  div.tnp-field input::placeholder,
-body.page-id-123 div.newsletter_contacts div.tnp-field input::placeholder{
+body.page-id-123 div.newsletter_contacts div.tnp-field input::placeholder,
+ùbody.page-id-125 div.newsletter_contacts div.tnp-field input::placeholder{
   color: #F4A6B4;
   opacity: 1; /* Firefox */
 }
 
 div#newsletterModal.reveal .close-button ,
-body.page-id-123 div.newsletter_contacts 
+body.page-id-123 div.newsletter_contacts,
+body.page-id-125 div.newsletter_contacts 
 {
   color: #F4A6B4;
 
@@ -895,14 +901,15 @@ body.page-id-123 div.newsletter_contacts
 
 /* about fine */
 /* contacts inizio */
-body:not(.page-id-123) .showinc{
+body:not(.page-id-123,.page-id-125) .showinc{
     display: none;
 }
 
-body.page-id-123 .hideinc{
+body.page-id-123 .hideinc,
+body.page-id-125 .hideinc{
     display: none;
 }
-body.page-id-123{
+body.page-id-123,body.page-id-125{
     background-color: #1A9457;
     color: #F4A6B4;
 }
@@ -912,7 +919,14 @@ body.page-id-123 h1,
 body.page-id-123 h2,
 body.page-id-123 h3,
 body.page-id-123 h4,
-body.page-id-123 h5{
+body.page-id-123 h5,
+body.page-id-125 p,
+body.page-id-125 a,
+body.page-id-125 h1,
+body.page-id-125 h2,
+body.page-id-125 h3,
+body.page-id-125 h4,
+body.page-id-125 h5{
     
      color: #F4A6B4;
 }
@@ -921,28 +935,34 @@ div.grid-x.top_contacts{
     max-width: 1500px;
     margin: auto;
 }
-body.page-id-123 nav#site-navigation.main-navigation{
+body.page-id-123 nav#site-navigation.main-navigation,
+body.page-id-125 nav#site-navigation.main-navigation{
     background: linear-gradient(#1A9457, 70%, transparent) ;
 
 
     color: #F4A6B4 !important;
 }
-body.page-id-123 nav#site-navigation.main-navigation a{
+body.page-id-123 nav#site-navigation.main-navigation a,
+body.page-id-125 nav#site-navigation.main-navigation a{
     color: #F4A6B4 !important;
 }
 body.page-id-123 nav#site-navigation.main-navigation #topLogo,
-body.page-id-123 #bottom_logo
+body.page-id-123 #bottom_logo,
+body.page-id-125 nav#site-navigation.main-navigation #topLogo,
+body.page-id-125 #bottom_logo
 {
     fill: #F4A6B4;
 }
 
-body.page-id-123 div.site-info{
+body.page-id-123 div.site-info,
+body.page-id-125 div.site-info{
     align-items: end;
     display: flex;
     margin-top: 100px;
 }
 
-body.page-id-123 div.tnp-subscription, body.page-id-123 form.tnp-subscription, body.page-id-123 form.tnp-profile {
+body.page-id-123 div.tnp-subscription, body.page-id-123 form.tnp-subscription, body.page-id-123 form.tnp-profile,
+body.page-id-125 div.tnp-subscription, body.page-id-125 form.tnp-subscription, body.page-id-125 form.tnp-profile {
 display: block;
 margin: 0px;
 max-width: 500px;
