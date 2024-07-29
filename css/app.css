@@ -331,7 +331,7 @@ button.menu-toggle{
 
     /* Home  general*/
     div.home_grid_item , div.works_grid_item{
-        width: calc( (100vw - 20px) /3 );
+        width: calc( (100vw - 40px) /3 );
         padding: 10px;
         float: left;
         margin-bottom: 50px;
@@ -441,7 +441,7 @@ button.menu-toggle{
         @media only screen and (max-width: 63.9375em)  {
 
             div.home_grid_item,div.works_grid_item {
-                width: calc( (100vw - 20px) /2 );
+                width: calc( (100vw - 40px) /2 );
                 
             }
             div.home_grid_item:first-of-type{
@@ -458,7 +458,7 @@ button.menu-toggle{
 
         @media screen and (max-width: 39.9375em) {
             div.home_grid_item,div.works_grid_item{
-                width: calc( (100vw - 20px)  );
+                width: calc( (100vw - 40px)  );
     
             }
             div.home_grid_item.home_element_sheet{
