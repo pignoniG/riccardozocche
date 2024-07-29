@@ -687,7 +687,7 @@ div#newsletterModal.reveal{
 }
 div#newsletterModal.reveal input,
 body.page-id-123 div.newsletter_contacts input,
-body.page-id-125 div.newsletter_contacts input,{
+body.page-id-125 div.newsletter_contacts input{
     background-color: #1A9457;
     border-color: #F4A6B4;
     border: solid;
