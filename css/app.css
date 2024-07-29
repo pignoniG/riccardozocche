@@ -664,11 +664,12 @@ div.footer_containers.left{
 div.footer_containers.right{
     
 }
-div#newsletterModal.reveal h3{
+div#newsletterModal.reveal h3,
+{
 padding: 30px;
 padding-top: 0px;}
 
-div#newsletterModal.reveal{
+div#newsletterModal.revealx{
     background-color: #1A9457;
     min-height: 50vh;
     color: #F4A6B4;
@@ -676,7 +677,8 @@ div#newsletterModal.reveal{
     border-color: transparent;
 
 }
-div#newsletterModal.reveal input{
+div#newsletterModal.reveal input,
+body.page-id-123 div.newsletter_contacts input{
     background-color: #1A9457;
     border-color: #F4A6B4;
     border: solid;
@@ -686,9 +688,9 @@ div#newsletterModal.reveal input{
     border-width: 2px;
     accent-color: #F4A6B4;
    
-
 }
-div#newsletterModal.reveal input.tnp-submit{
+div#newsletterModal.reveal input.tnp-submit,
+body.page-id-123 div.newsletter_contacts input.tnp-submit{
     padding: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -696,7 +698,8 @@ div#newsletterModal.reveal input.tnp-submit{
     border-color: #F4A6B4;
     color: #1A9457;
 }
-div#newsletterModal.reveal input.tnp-submit:hover{
+div#newsletterModal.reveal input.tnp-submit:hover,
+body.page-id-123 div.newsletter_contacts input.tnp-submit:hover{
    color: #F4A6B4;
    background-color: #1A9457;
    border-color: #F4A6B4;
@@ -708,16 +711,20 @@ div.reveal-overlay{
 
 
 
-div#newsletterModal.reveal  div.tnp-field.tnp-field-email label{
+div#newsletterModal.reveal  div.tnp-field.tnp-field-email label,
+body.page-id-123 div.newsletter_contacts div.tnp-field.tnp-field-email label{
     display: none;
 }
 
-div#newsletterModal.reveal  div.tnp-field.tnp-field-email input::placeholder {
+div#newsletterModal.reveal  div.tnp-field input::placeholder,
+body.page-id-123 div.newsletter_contacts div.tnp-field input::placeholder{
   color: #F4A6B4;
   opacity: 1; /* Firefox */
 }
 
-div#newsletterModal.reveal .close-button {
+div#newsletterModal.reveal .close-button ,
+body.page-id-123 div.newsletter_contacts 
+{
   color: #F4A6B4;
 
 }
@@ -879,6 +886,85 @@ div#newsletterModal.reveal .close-button {
 
 
 /* about fine */
+/* contacts inizio */
+body:not(.page-id-123) .showinc{
+    display: none;
+}
+
+body.page-id-123 .hideinc{
+    display: none;
+}
+body.page-id-123{
+    background-color: #1A9457;
+    color: #F4A6B4;
+}
+body.page-id-123 p,
+body.page-id-123 a,
+body.page-id-123 h1,
+body.page-id-123 h2,
+body.page-id-123 h3,
+body.page-id-123 h4,
+body.page-id-123 h5{
+    
+     color: #F4A6B4;
+}
+
+div.grid-x.top_contacts{
+    max-width: 1500px;
+    margin: auto;
+}
+body.page-id-123 nav#site-navigation.main-navigation{
+    background: linear-gradient(#1A9457, 70%, transparent) ;
+
+
+    color: #F4A6B4 !important;
+}
+body.page-id-123 nav#site-navigation.main-navigation a{
+    color: #F4A6B4 !important;
+}
+body.page-id-123 nav#site-navigation.main-navigation #topLogo,
+body.page-id-123 #bottom_logo
+{
+    fill: #F4A6B4;
+}
+
+body.page-id-123 div.site-info{
+    align-items: end;
+    display: flex;
+    margin-top: 100px;
+}
+
+body.page-id-123 div.tnp-subscription, body.page-id-123 form.tnp-subscription, body.page-id-123 form.tnp-profile {
+display: block;
+margin: 0px;
+max-width: 500px;
+width: 100%;
+}
+
+    /* contacts  general*/
+
+    /* contacts  extra medium*/
+
+        @media only screen and (min-width: 63.9375em)  {
+        }
+
+    /* contacts  medium*/
+
+        @media only screen and (max-width: 63.9375em)  {
+        }
+
+    /* contacts  mobile*/
+
+        @media screen and (max-width: 39.9375em) {
+        }
+
+    /* contacts  extra mobile*/
+        @media screen and (max-width: 28.125em) {
+        }
+
+
+
+/* contacts fine */
 /* XXXXX inizio */
 
     /* XXXXX  general*/
