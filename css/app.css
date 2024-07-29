@@ -489,7 +489,7 @@ button.menu-toggle{
 
     div.service_grid_item{
         width: calc( (100vw - 80px) / 3 );
-        float: leftposition: relative;;
+        float: left;
         margin: 10px;
         margin-bottom: 0px;
     }

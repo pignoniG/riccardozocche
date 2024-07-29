@@ -43,7 +43,7 @@ get_header();
 
 			<div class="about_menu cell small-12 medium-12 large-2 large-order-2  medium-order-1 small-order-1">
 				<ul>
-					<li><a data-filterkey="container_studio" class="selected" ><?php echo mytranslate("Studio | Studio") ;?></a></li>
+					<li><a data-filterkey="container_studio" class="selected" ><?php echo mytranslate("Bio | Bio") ;?></a></li>
 					
 					<li><a data-filterkey="container_manifesto " ><?php echo mytranslate("Manifest | Manifesto") ;?></a></li>
 					<li><a data-filterkey="container_press" ><?php echo mytranslate("Press | Press") ;?></a></li>
