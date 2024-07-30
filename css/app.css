@@ -653,10 +653,10 @@ div.footer_containers.buttons{
 }
 
 
-div.footer_containers  a:hover{
+footer  a:hover{
     text-decoration: none;
 }
-div.footer_containers  a{
+footer  a{
     text-decoration: underline;
 }
 
