@@ -140,12 +140,12 @@ get_header();
 					        	?> 
 					        	<div onclick="window.open('<?php echo $link;?>', '_blank');" id="<?php echo $id;?>" class="press_cell cell small-12 medium-12 large-6 grid-x">
 
-					        		<div  class="press_image cell small-6 medium-6 large-6">
+					        		<div  class="press_image cell small-12 medium-6 large-6">
 
 					        			<img src="<?php echo wp_get_attachment_image_url( $immagine, $size ); ?>">
 					        		</div>
 
-					        		<div class="press_content cell small-6 medium-6 large-6">
+					        		<div class="press_content cell small-12 medium-6 large-6">
 					        			<h3><?php echo $titolo ;?></h3>
 					        			<h3 style="padding-bottom: 40px;"><?php echo $testo ;?></h3>
 					        			<h3><?php echo mytranslate("Find out more | Scopri di più") ;?> </h3>
