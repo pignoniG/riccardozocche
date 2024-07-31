@@ -870,6 +870,16 @@ body.page-id-125 div.newsletter_contacts
          text-decoration: underline;
     }
 
+    div.container_event td h3{
+        margin-bottom: 0px;
+    }
+    div.container_event td a{
+        text-decoration: underline;
+    }
+    div.container_event td a:hover{
+       text-decoration: none;
+    }
+
 
 
 

@@ -43,10 +43,10 @@ get_header();
 
 			<div class="about_menu cell small-12 medium-12 large-2 large-order-2  medium-order-1 small-order-1">
 				<ul>
-					<li><a data-filterkey="container_studio" class="selected" ><?php echo mytranslate("Bio | Bio") ;?></a></li>
-					
-					<li><a data-filterkey="container_manifesto " ><?php echo mytranslate("Manifest | Manifesto") ;?></a></li>
-					<li><a data-filterkey="container_press" ><?php echo mytranslate("Press | Press") ;?></a></li>
+					<li><a id="btn_container_studio" data-filterkey="container_studio" class="selected" ><?php echo mytranslate("Bio | Bio") ;?></a></li>
+					<li><a id="btn_container_manifesto" data-filterkey="container_manifesto" ><?php echo mytranslate("Manifest | Manifesto") ;?></a></li>
+					<li><a id="btn_container_press" data-filterkey="container_press" ><?php echo mytranslate("Press | Press") ;?></a></li>
+					<li><a id="btn_container_event" data-filterkey="container_event" ><?php echo mytranslate("Events | Eventi") ;?></a></li>
 				</ul>
 			</div>
 
@@ -131,13 +131,14 @@ get_header();
 					        // Load sub field value.
 					        $titolo = get_sub_field('titolo');
 					        $testo = get_sub_field('testo');
+					        $id = strtolower(preg_replace('/\s+/', '', $titolo));
 					        $immagine = get_sub_field('Immagine');
 					        $link = get_sub_field('link');
 					        $size = 'large'; // (thumbnail, medium, large, full or custom size)
 					        // Do something, but make sure you escape the value if outputting directly...
 
-					        	?>
-					        	<div onclick="window.open('<?php echo $link;?>', '_blank');" class="press_cell cell small-12 medium-12 large-6 grid-x">
+					        	?> 
+					        	<div onclick="window.open('<?php echo $link;?>', '_blank');" id="<?php echo $id;?>" class="press_cell cell small-12 medium-12 large-6 grid-x">
 
 					        		<div  class="press_image cell small-6 medium-6 large-6">
 
@@ -166,6 +167,48 @@ get_header();
 
 
 			</div>
+
+						<div style="display:none;" class="container_event toggable_about  cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-5">
+
+						<table>
+  
+
+
+
+
+				<?php
+
+					// Check rows exists.
+					if( have_rows('about_event_elements') ):
+					
+					    // Loop through rows.
+					    while( have_rows('about_event_elements') ) : the_row();
+					
+					        // Load sub field value.
+					        $titolo = get_sub_field('titolo');
+					        $data = get_sub_field('data');
+					        $link = get_sub_field('link');
+					    
+					        	?>
+					        	<tr>
+					        		<td id="<?php echo $data;?>"><h3><?php echo $data;?></h3></td>
+									<td><h3><a href="" target="_blank"><?php echo $titolo;?></h3></a></td>
+								</tr>	
+								
+					        	<?php
+					
+					    // End loop.
+					    endwhile;
+					
+					// No value.
+					else :
+					    // Do something...
+					endif;
+				?>
+
+			</table>
+			</div>
+
 
 		</div>
 

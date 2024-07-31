@@ -1,6 +1,7 @@
 $( document ).ready(
     function(){ 
 $( "div.about_menu a" ).each(function(index) {
+
     $(this).on("click", function(){
         $( "div.about_menu a" ).removeClass("selected");
         $(this).addClass("selected");
@@ -17,8 +18,11 @@ $( "div.about_menu a" ).each(function(index) {
             $( "div.toggable_about").css({ opacity: 1 });
          //your code to be executed after 1 second
         }, delayInMilliseconds);
-        
+        history.pushState
 
+        var stateObj = { };
+
+        history.pushState(stateObj, filterkey, "?"+filterkey);
 
     });
 });
@@ -35,9 +39,33 @@ $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
 });
 
+if (window.location.search) {
+    console.log("locserach");
 
+    var loc= window.location.search;
+    var hash= window.location.hash;
+
+
+
+    
+    $( '#btn_'+ loc.split("?")[1] ).trigger( "click" );
+
+  
+
+    setTimeout(function(){
+    
+        window.location.hash = hash;
+
+    }, 100);
+   
+
+       
+   
+
+};
 
 
 });
 
 $(window).on('resize', function () {});
+
