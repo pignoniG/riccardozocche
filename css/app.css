@@ -960,8 +960,13 @@ body.page-id-125 nav#site-navigation.main-navigation{
 
     color: #F4A6B4 !important;
 }
+
+
 body.page-id-123 nav#site-navigation.main-navigation a,
-body.page-id-125 nav#site-navigation.main-navigation a{
+body.page-id-125 nav#site-navigation.main-navigation a,
+body.page-id-123 nav#site-navigation.main-navigation li.menu-item,
+body.page-id-125 nav#site-navigation.main-navigation li.menu-item
+{
     color: #F4A6B4 !important;
 }
 body.page-id-123 nav#site-navigation.main-navigation #topLogo,
