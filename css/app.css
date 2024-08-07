@@ -723,8 +723,13 @@ div.reveal-overlay{
 
 
 div#newsletterModal.reveal  div.tnp-field.tnp-field-email label,
+div#newsletterModal.reveal  div.tnp-field.tnp-field-firstname label,
 body.page-id-123 div.newsletter_contacts div.tnp-field.tnp-field-email label,
-body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-field-email label{
+body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-field-email label,
+body.page-id-123 div.newsletter_contacts div.tnp-field.tnp-field-firstname label,
+body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-field-firstname label,
+{
+
     display: none;
 }
 
