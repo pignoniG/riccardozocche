@@ -13,6 +13,9 @@
       padding-top: 110px;
 
     }
+    div.cmplz-body div.cmplz-message p{
+        color: black;
+    }
 
     hr.separator{
         border-block-color: #F4A6B4; 
@@ -989,6 +992,9 @@ body.page-id-123,body.page-id-125{
     background-color: #1A9457;
     color: #F4A6B4;
 }
+ div.cmplz-body div.cmplz-message p{
+        color: black;
+    }
 body.page-id-123 p,
 body.page-id-123 a,
 body.page-id-123 h1,
