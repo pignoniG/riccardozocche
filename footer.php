@@ -38,9 +38,9 @@ $idpage=125;
   	</h1>
   </div>
   <div class="cell small-12 medium-6 contacts_top_right ">
-  	<p><h1>
+  	<h1>
   		<?php echo  get_field('contacts_top_right',$post_id =$idpage)?>
-  	</h1></p>
+  	</h1>
   </div>
 
 
