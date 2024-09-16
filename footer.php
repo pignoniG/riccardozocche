@@ -60,7 +60,10 @@ $idpage=125;
 <div class="site-info">
 
 
-	<svg id="bottom_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.24 197.83"><defs><style>.cls-1{stroke-width:0px;}</style></defs><path class="st0" d="M96.5,129.9V98.6l30.8,31.3H96.5z M70,129.9H47V67.9h43.2v62.1H70z M107.4,191.9H29.9l38.8-53.5L107.4,191.9
+	
+
+<div class="footer_containers left">
+	<svg id="bottom_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.24 200"><defs><style>.cls-1{stroke-width:0px;}</style></defs><path class="st0" d="M96.5,129.9V98.6l30.8,31.3H96.5z M70,129.9H47V67.9h43.2v62.1H70z M107.4,191.9H29.9l38.8-53.5L107.4,191.9
 	L107.4,191.9z M9.9,129.9l30.8-31.3v31.3H9.9z M22,94.1c-8.3,0-14.3-5.2-14.3-13.1S13.7,67.9,22,67.9h18.7v26.2
 	C40.7,94.1,22,94.1,22,94.1z M30,5.8h77.3L68.6,59.5L30,5.8z M115.2,67.9L115.2,67.9c8.3,0,14.3,5.1,14.3,13.1s-5.9,13.1-14.3,13.1
 	H96.5V67.9L115.2,67.9L115.2,67.9z M137.2,129.9l-32.7-30.4h12c17.8,0,19.3-15.4,19.3-18.5c0-9.7-8.3-19-19.6-19H74.1l40.1-55.4V0
@@ -73,7 +76,6 @@ $idpage=125;
 	h1.3c0.8,0,1.1,0.3,1.1,1S129.8,189.9,129,189.9L129,189.9z"/></svg>
 
 
-<div class="footer_containers left">
 	<h4 class="hideinc"><?php echo  get_field('footer_text_top_left',$post_id =108);?></h4>
 	<h5><?php echo  get_field('footer_text_bottom_left',$post_id =108);?></h5>
 </div>

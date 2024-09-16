@@ -41,17 +41,17 @@ get_header();
 
 			</div>
 
-			<div class="about_menu cell small-12 medium-12 large-2 large-order-2  medium-order-1 small-order-1">
+			<div class="about_menu cell small-12 medium-12 large-1 large-order-2  medium-order-1 small-order-1">
 				<ul>
-					<li><a id="btn_container_studio" data-filterkey="container_studio" class="selected" ><?php echo mytranslate("Bio | Bio") ;?></a></li>
-					<li><a id="btn_container_manifesto" data-filterkey="container_manifesto" ><?php echo mytranslate("Manifest | Manifesto") ;?></a></li>
+					<li><a id="btn_container_studio" data-filterkey="container_studio" class="selected" ><?php echo mytranslate("Biography | Biografia") ;?></a></li>
+					<li><a id="btn_container_manifesto" data-filterkey="container_manifesto" ><?php echo mytranslate("Manifesto | Manifesto") ;?></a></li>
 					<li><a id="btn_container_press" data-filterkey="container_press" ><?php echo mytranslate("Press | Press") ;?></a></li>
 					<li><a id="btn_container_event" data-filterkey="container_event" ><?php echo mytranslate("Events | Eventi") ;?></a></li>
 				</ul>
 			</div>
 
 
-			<div style="display:none;" class="toggable_about container_manifesto cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-3 grid-x " >
+			<div style="display:none;" class="toggable_about container_manifesto cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-3 grid-x " >
 
 				<?php
 
@@ -87,7 +87,7 @@ get_header();
 				?>
 			</div>
 
-			<div  class="container_studio toggable_about  cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-4 grid-x">
+			<div  class="container_studio toggable_about  cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-4 grid-x">
 				<?php
 
 				$about_studio_images = get_field('about_studio_images');
@@ -96,7 +96,7 @@ get_header();
 
 				?>
 
-				<div class="cell small-12 medium-12 large-6 large-order-1  medium-order-2 small-order-2">
+				<div class="cell small-12 medium-12 large-6 large-order-1  medium-order-2 small-order-1">
 					<?php 
 						$size = 'large'; // (thumbnail, medium, large, full or custom size)
 						if( $about_studio_images ): ?>
@@ -111,14 +111,14 @@ get_header();
 
 
 				</div>
-				<div class="cell small-12 medium-12 large-6 large-order-2  medium-order-1 small-order-1">
+				<div class="cell small-12 medium-12 large-6 large-order-2  medium-order-1 small-order-2">
 
 					<h3><?php echo $about_studio_text ;?></h3>
 
 				</div>
 			</div>
 
-			<div style="display:none;" class="container_press toggable_about  cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-5">
+			<div style="display:none;" class="container_press toggable_about  cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-5">
 
 				<?php
 
@@ -168,7 +168,7 @@ get_header();
 
 			</div>
 
-						<div style="display:none;" class="container_event toggable_about  cell small-12 medium-8 large-7  large-order-3  medium-order-3 small-order-5">
+						<div style="display:none;" class="container_event toggable_about  cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-5">
 
 						<table>
   
