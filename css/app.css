@@ -40,7 +40,7 @@
     }
     
     h1{
-      font-size: 30px;
+      font-size: 50px;
        line-height: 1.2;
     }
     h2{
@@ -216,11 +216,20 @@ button.menu-toggle{
     /* project  medium*/
 
         @media only screen and (max-width: 63.9375em)  {
+                h1{
+            font-size: 35px;
+             line-height: 1.2;
+            }
         }
 
     /* project  mobile*/
 
         @media screen and (max-width: 39.9375em) {
+
+                 h1{
+            font-size: 30px;
+             line-height: 1.2;
+            }
         }
 
     /* project  extra mobile*/
