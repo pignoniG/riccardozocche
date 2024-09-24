@@ -153,7 +153,8 @@ get_header();
 					        			<h5 ><?php echo $sotto_titolo;?> - <?php echo $data;?> </h5>
 					        			<br>
 					        			<h4 style="padding-bottom: 40px;"><?php echo $testo ;?></h4>
-					        			<h4>➔</h4>
+					        			<h4 style="bottom: -9px;position: absolute;">➔</h4>
+
 
 					        		</div>	
 					        	</div>
@@ -211,7 +212,7 @@ get_header();
 					        			<h5 ><?php echo $sotto_titolo;?> - <?php echo $data;?> </h5>
 					        			<br>
 					        			<h4 style="padding-bottom: 40px;"><?php echo $testo ;?></h4>
-					        			<h4>➔</h4>
+					        			<h4 style="bottom: -9px;position: absolute;">➔</h4>
 
 					        		</div>	
 					        	</div>
