@@ -130,10 +130,13 @@ get_header();
 					
 					        // Load sub field value.
 					        $titolo = get_sub_field('titolo');
+					        $sotto_titolo = get_sub_field('sotto_titolo ');
 					        $testo = get_sub_field('testo');
 					        $id = strtolower(preg_replace('/\s+/', '', $titolo));
 					        $immagine = get_sub_field('Immagine');
 					        $link = get_sub_field('link');
+					        $data = get_sub_field('data');
+
 					        $size = 'large'; // (thumbnail, medium, large, full or custom size)
 					        // Do something, but make sure you escape the value if outputting directly...
 
@@ -146,9 +149,12 @@ get_header();
 					        		</div>
 
 					        		<div class="press_content cell small-12 medium-6 large-6">
-					        			<h3><?php echo $titolo ;?></h3>
+					        			<h3 style="font-weight: bold;"><?php echo $titolo ;?></h3>
+					        			<h4 ><?php echo $sotto_titolo;?> - <?php echo $data;?> </h4>
+					        			<br>
+					        			<br>
 					        			<h3 style="padding-bottom: 40px;"><?php echo $testo ;?></h3>
-					        			<h3><?php echo mytranslate("Find out more | Scopri di più") ;?> </h3>
+					        			<h3>➔</h3>
 
 					        		</div>	
 					        	</div>
