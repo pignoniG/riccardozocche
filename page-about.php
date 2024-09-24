@@ -149,12 +149,11 @@ get_header();
 					        		</div>
 
 					        		<div class="press_content cell small-12 medium-6 large-6">
-					        			<h3 style="font-weight: bold;"><?php echo $titolo ;?></h3>
-					        			<h4 ><?php echo $sotto_titolo;?> - <?php echo $data;?> </h4>
+					        			<h4 style="font-weight: bold;"><?php echo $titolo ;?></h4>
+					        			<h5 ><?php echo $sotto_titolo;?> - <?php echo $data;?> </h5>
 					        			<br>
-					        			<br>
-					        			<h3 style="padding-bottom: 40px;"><?php echo $testo ;?></h3>
-					        			<h3>➔</h3>
+					        			<h4 style="padding-bottom: 40px;"><?php echo $testo ;?></h4>
+					        			<h4>➔</h4>
 
 					        		</div>	
 					        	</div>
