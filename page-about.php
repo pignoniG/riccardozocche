@@ -194,7 +194,7 @@ get_header();
 					        $sotto_titolo = get_sub_field('sotto_titolo ');
 					        $testo = get_sub_field('testo');
 					        $id = strtolower(preg_replace('/\s+/', '', $titolo));
-					        $immagine = get_sub_field('img');
+					        $immagine = get_sub_field('Img');
 					        $link = get_sub_field('link');
 					        $data = get_sub_field('data');
 					        $size = 'large'; // (thumbnail, medium, large, full or custom size)
