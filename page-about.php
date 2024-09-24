@@ -130,7 +130,7 @@ get_header();
 					
 					        // Load sub field value.
 					        $titolo = get_sub_field('titolo');
-					        $sotto_titolo = get_sub_field('sotto_titolo ');
+					        $sotto_titolo = get_sub_field('sotto_titolo');
 					        $testo = get_sub_field('testo');
 					        $id = strtolower(preg_replace('/\s+/', '', $titolo));
 					        $immagine = get_sub_field('Immagine');
@@ -191,7 +191,7 @@ get_header();
 					
 					        // Load sub field value.
 					        $titolo = get_sub_field('titolo');
-					        $sotto_titolo = get_sub_field('sotto_titolo ');
+					        $sotto_titolo = get_sub_field('sotto_titolo');
 					        $testo = get_sub_field('testo');
 					        $id = strtolower(preg_replace('/\s+/', '', $titolo));
 					        $immagine = get_sub_field('Img');
