@@ -67,52 +67,17 @@ get_header();
 		</div>
 	
 
-		<div class="cell small-12 medium-12 large-12 large-order-3 small-order-3" style="text-align: center;">
-			<h3 class="methodology_contact green_txt">
+		<div class="cell small-12 medium-12 large-12 large-order-3 small-order-3" style="text-align: center; margin-top: 50px;margin-bottom: 50px;">
+			<h2 class="methodology_contact green_txt">
 				<?php echo get_field('methodology_call_to_action');?>
-			</h3>
-			<a href="mailto:info@riccardozocche.com" class="button white"><?php echo mytranslate("Contact Us | Contattaci") ;?></a>
+			</h2>
+			<a href="<?php echo get_permalink(123);?>"style="font-size: 25px" class="button green"><?php echo get_field('methodology_button');?></a>
 		
 			
 		</div>
 
 
-		<hr class="separator">
-
-		
-		<div class="entry-content grid-x methodology_container">
-
-		<div class="cell small-12 medium-12 large-12 ">
-
-			<h3> <?php echo get_field('methodology_title');?> </h3>
-		</div>	
-
-
-		<div class="cell small-12 medium-12 large-8 large-order-1 small-order-1 ">
-			<?php 
-			$methodology_gallery= get_field('methodology_gallery');
-
-			$size = 'full'; // (thumbnail, medium, large, full or custom size)
-
-
-
-			if( have_rows('methodology_gallery') ): ?>
-				<div class="methodology_gallery">
-
-    			<?php while ( have_rows('methodology_gallery') ) : the_row();
-        		$image_id = get_sub_field('methodology_gallery_image');
-        		$image_caption = get_sub_field('methodology_gallery_caption');?>
-
-        		 <div  alt="<?php echo $image_caption;?>" class="methodology_gallery_image" style="background-image:  url(' <?php echo wp_get_attachment_image_url( $image_id, $size ); ?>');"></div>
-        		
-    			<?php endwhile;?>
-    			</div>
-			<?php endif; ?>
-		</div>
-		<div class="cell small-12 medium-12 large-4 large-order-2 small-order-2">
-			<h3 class="methodology_gallery_caption"></h3>
-		</div>
-
+get_permalink(4)
 
 
 
