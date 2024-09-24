@@ -175,8 +175,7 @@ get_header();
 
 						<div style="display:none;" class="container_event toggable_about  cell small-12 medium-8 large-8  large-order-3  medium-order-3 small-order-5">
 
-						<table>
-  
+						
 
 
 
@@ -191,14 +190,31 @@ get_header();
 					
 					        // Load sub field value.
 					        $titolo = get_sub_field('titolo');
-					        $data = get_sub_field('data');
+					        $sotto_titolo = get_sub_field('sotto_titolo ');
+					        $testo = get_sub_field('testo');
+					        $id = strtolower(preg_replace('/\s+/', '', $titolo));
+					        $immagine = get_sub_field('Immagine');
 					        $link = get_sub_field('link');
-					    
+					        $data = get_sub_field('data');
+					        $size = 'large'; // (thumbnail, medium, large, full or custom size)
 					        	?>
-					        	<tr>
-					        		<td id="<?php echo $data;?>"><h3><?php echo $data;?></h3></td>
-									<td><h3><a href="" target="_blank"><?php echo $titolo;?></h3></a></td>
-								</tr>	
+
+					        	<div onclick="window.open('<?php echo $link;?>', '_blank');" id="<?php echo $id;?>" class="press_cell cell small-12 medium-12 large-6 grid-x">
+
+					        		<div  class="press_image cell small-12 medium-6 large-6">
+
+					        			<img src="<?php echo wp_get_attachment_image_url( $immagine, $size ); ?>">
+					        		</div>
+
+					        		<div class="press_content cell small-12 medium-6 large-6">
+					        			<h4 style="font-weight: bold;"><?php echo $titolo ;?></h4>
+					        			<h5 ><?php echo $sotto_titolo;?> - <?php echo $data;?> </h5>
+					        			<br>
+					        			<h4 style="padding-bottom: 40px;"><?php echo $testo ;?></h4>
+					        			<h4>➔</h4>
+
+					        		</div>	
+					        	</div>
 								
 					        	<?php
 					
@@ -211,7 +227,6 @@ get_header();
 					endif;
 				?>
 
-			</table>
 			</div>
 
 
