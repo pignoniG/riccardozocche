@@ -256,6 +256,7 @@ button.menu-toggle{
     #topLogoBtn:hover #topLogo {
         fill:#F4A6B4;
     }
+
     #bottom_logo{
 
         height: 110px;
@@ -265,6 +266,10 @@ button.menu-toggle{
         left: 20px;
         padding-bottom: 10px;
     }
+    #btmLogoBtn:hover #bottom_logo {
+        fill:#F4A6B4;
+    }
+
     div.menu-menu-container, div.menu-menu_en-container{
         display: flex;
         float: right;
