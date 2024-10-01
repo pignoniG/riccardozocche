@@ -206,16 +206,28 @@ button.menu-toggle{
      div.entry-content figure figcaption{
       text-align: left;
      }
+    .topLogo.narrow{
+        display: none;
+    }
 
 
     /* project  extra medium*/
 
         @media only screen and (min-width: 63.9375em)  {
+           
+
+
         }
 
     /* project  medium*/
 
         @media only screen and (max-width: 63.9375em)  {
+             .topLogo.large{
+            display: none;
+            }
+            .topLogo.narrow{
+            display: block;
+            }
                 h1{
             font-size: 35px;
              line-height: 1.2;
@@ -244,7 +256,7 @@ button.menu-toggle{
 
     /* nav  general*/
 
-    #topLogo{
+    .topLogo{
 
         height: 75px;
         fill: #1A9457;
@@ -253,7 +265,7 @@ button.menu-toggle{
         margin-left: 10px;
         padding-top: 0px;
     }
-    #topLogoBtn:hover #topLogo {
+    #topLogoBtn:hover .topLogo {
         fill:#F4A6B4;
     }
 
@@ -1050,9 +1062,9 @@ body.page-id-125 nav#site-navigation.main-navigation li.menu-item
 {
     color: #F4A6B4 !important;
 }
-body.page-id-123 nav#site-navigation.main-navigation #topLogo,
+body.page-id-123 nav#site-navigation.main-navigation .topLogo,
 body.page-id-123 #bottom_logo,
-body.page-id-125 nav#site-navigation.main-navigation #topLogo,
+body.page-id-125 nav#site-navigation.main-navigation .topLogo,
 body.page-id-125 #bottom_logo
 {
     fill: #F4A6B4;
