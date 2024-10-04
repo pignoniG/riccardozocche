@@ -265,7 +265,7 @@ button.menu-toggle{
         margin-left: 10px;
         padding-top: 0px;
     }
-    #topLogoBtn:hover .topLogo {
+    #topLogo:hover .topLogo {
         fill:#F4A6B4;
     }
 
