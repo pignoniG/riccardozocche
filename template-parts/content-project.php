@@ -10,16 +10,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		?>
-	</header><!-- .entry-header -->
 
 
 	<?php 
@@ -35,13 +25,25 @@
 		        <?php endforeach; ?>
 		    </div>
 		<?php endif; ?>
+
+	<header class="entry-header">
+		<?php
+		if ( is_singular() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+
+		?>
+	</header><!-- .entry-header -->
+
 	
 
 
 
 	<div class="entry-content grid-x">
 
-		<div class="cell small-12 medium-12 large-3 large-order-1 small-order-2 conten_project_infocard">
+		<div class="cell small-12 medium-12 large-3 large-order-1 small-order-1 conten_project_infocard">
 			
 
 			<?php 
@@ -64,7 +66,7 @@
 
 
 		</div>	
-		<div class="cell small-12 medium-12 large-6 large-order-2 small-order-1 conten_project_body">
+		<div class="cell small-12 medium-12 large-6 large-order-2 small-order-2 conten_project_body">
 
 	
 		<?php

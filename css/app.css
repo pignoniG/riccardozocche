@@ -474,6 +474,13 @@ button.menu-toggle{
 
         @media only screen and (max-width: 63.9375em)  {
 
+            body { 
+          
+              padding-top: 100px;
+        
+            }
+
+
             div.home_grid_item,div.works_grid_item {
                 width: calc( (100vw - 20px) /2 );
                 
@@ -942,6 +949,7 @@ body.page-id-125 div.newsletter_contacts
 
     div.press_cell {
         cursor: pointer;
+        margin-bottom: 30px;
     }
 
     div.press_cell:hover div.press_image

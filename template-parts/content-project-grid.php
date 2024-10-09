@@ -18,7 +18,7 @@
 
 	?>
 
-    <div  onclick="window.open('<?php echo $project_permalink;?>', '_blank');" class="works_grid_item category-all <?php foreach($category_detail as $cd){ echo " category-".$cd->cat_name;}?> ">
+    <div  onclick="window.open('<?php echo $project_permalink;?>', '_self');" class="works_grid_item category-all <?php foreach($category_detail as $cd){ echo " category-".$cd->cat_name;}?> ">
     	<img src=" <?php echo wp_get_attachment_image_url( $works_element_project_image, $size ); ?>">
     	<h3> <?php echo $title.$project_location.$project_year;?> </h3>
     </div><?php		
