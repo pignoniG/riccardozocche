@@ -13,9 +13,15 @@
       padding-top: 80px;
 
     }
+
+    article{
+         margin-left: 10px;
+      margin-right: 10px;
+    }
     div.cmplz-body div.cmplz-message p{
         color: black;
     }
+
 
     hr.separator{
         border-block-color: #F4A6B4; 
@@ -776,10 +782,14 @@ body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-field-firstname label
 }
 
 div#newsletterModal.reveal  div.tnp-field input::placeholder,
-body.page-id-123 div.newsletter_contacts div.tnp-field input::placeholder,
-ùbody.page-id-125 div.newsletter_contacts div.tnp-field input::placeholder{
-  color: #F4A6B4;
-  opacity: 1; /* Firefox */
+div.tnp-field input::placeholder,
+div.tnp-field input::placeholder{
+  color: #F4A6B4 !important;
+  opacity: 1 !important; /* Firefox */
+}
+
+div.tnp-field label{
+    display: none;
 }
 
 div#newsletterModal.reveal .close-button ,
@@ -1023,7 +1033,8 @@ body:not(.page-id-123,.page-id-125) .showinc{
 
 body.page-id-123 .hideinc,
 body.page-id-125 .hideinc{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 body.page-id-123,body.page-id-125{
     background-color: #1A9457;
