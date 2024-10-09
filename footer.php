@@ -80,19 +80,34 @@ $idpage=125;
 	c0.8,0,1.2,0.3,1.3,1.1c0.1,0.8,0.2,1.7,0.3,1.9h2.1v-0.2C132.2,194.1,132.3,193.1,132.1,192.1L132.1,192.1z M129,189.9h-1.3V188
 	h1.3c0.8,0,1.1,0.3,1.1,1S129.8,189.9,129,189.9L129,189.9z"/></svg>
 
+
+<?php 
+		if(ICL_LANGUAGE_CODE=='en'){
+				$idpage=110;
+
+
+
+			} elseif(ICL_LANGUAGE_CODE=='it'){ 
+				$idpage=108;
+			
+
+			}
+			?>
+
+
 </a>
-	<h4 class="hideinc"><?php echo  get_field('footer_text_top_left',$post_id =108);?></h4>
-	<h5><?php echo  get_field('footer_text_bottom_left',$post_id =108);?></h5>
+	<h4 class="hideinc"><?php echo  get_field('footer_text_top_left',$post_id =$idpage);?></h4>
+	<h5><?php echo  get_field('footer_text_bottom_left',$post_id =$idpage);?></h5>
 </div>
 <div class="footer_containers right">
-	<h4 class="hideinc"><?php echo  get_field('footer_text_top_right',$post_id =108);?></h4>
-	<h5><?php echo  get_field('footer_text_bottom_right',$post_id =108);?></h5>
+	<h4 class="hideinc"><?php echo  get_field('footer_text_top_right',$post_id =$idpage);?></h4>
+	<h5><?php echo  get_field('footer_text_bottom_right',$post_id =$idpage);?></h5>
 </div>
 
 
 <div class="footer_containers buttons hideinc">
 <?php 
-$rows = get_field('footer_arch_buttons',$post_id =108);
+$rows = get_field('footer_arch_buttons',$post_id =$idpage);
 if( $rows ) {
 
     foreach( $rows as $row ) {
