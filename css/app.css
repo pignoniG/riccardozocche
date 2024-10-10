@@ -781,6 +781,38 @@ body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-field-firstname label
     display: none;
 }
 
+body.page-id-123 div.tnp-subscription ,
+body.page-id-125  div.tnp-subscription {
+    max-width: initial;
+    position: relative;
+}
+
+
+
+body.page-id-123 .tnp-subscription div.tnp-field,
+body.page-id-125  .tnp-subscription div.tnp-field{
+width: calc(50% - 5px);
+min-width: ;
+float: left;
+/* margin-right: 5px; */
+}
+
+
+body.page-id-123 .tnp-subscription div.tnp-field:first-of-type,
+body.page-id-125  .tnp-subscription div.tnp-field:first-of-type{
+
+margin-right: 10px; 
+}
+
+body.page-id-123 .tnp-subscription div.tnp-field.tnp-field-button,
+body.page-id-125  .tnp-subscription div.tnp-field.tnp-field-button{
+
+float: initial;
+}
+
+
+
+
 div#newsletterModal.reveal  div.tnp-field input::placeholder,
 div.tnp-field input::placeholder,
 div.tnp-field input::placeholder{
@@ -845,6 +877,16 @@ body.page-id-125 div.newsletter_contacts
     /* footer  mobile*/
 
         @media screen and (max-width: 39.9375em) {
+
+            body.page-id-123 .tnp-subscription div.tnp-field,
+            body.page-id-125  .tnp-subscription div.tnp-field{
+            width: calc(100%);
+  
+            float: initial;
+             margin-right: 0px; 
+            }
+            
+
 
             div.footer_containers{
                 width: calc(100vw );
@@ -1098,13 +1140,7 @@ body.page-id-125 div.site-info{
     margin-top: 100px;
 }
 
-body.page-id-123 div.tnp-subscription, body.page-id-123 form.tnp-subscription, body.page-id-123 form.tnp-profile,
-body.page-id-125 div.tnp-subscription, body.page-id-125 form.tnp-subscription, body.page-id-125 form.tnp-profile {
-display: block;
-margin: 0px;
-max-width: 500px;
-width: 100%;
-}
+
 div#newsletterModal.reveal div.tnp-subscription, div#newsletterModal.reveal form.tnp-subscription, div#newsletterModal.reveal form.tnp-profile{
    margin: 0px; 
 }

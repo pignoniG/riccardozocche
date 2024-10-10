@@ -47,8 +47,13 @@ $idpage=125;
   <div style="margin-top: 20px;"class="cell small-6 large-3 small-offset-0 large-offset-6 "><h3><?php echo  get_field('contacts_bottom_left',$post_id =$idpage);?></h3></div>
   <div style="margin-top: 20px;" class="cell small-6 large-3"><h3><?php echo  get_field('contacts_bottom_right',$post_id =$idpage);?></h3></div>
 
-  <div class="cell small-12 medium-12 large-6 small-offset-0 large-offset-6 newsletter_contacts" style="margin-top: 20px;">
-  	<h3><?php echo  get_field('newsletter_text',$post_id =$idpage);?></h3>
+  <div class="cell small-12 medium-12 large-6 small-offset-0 large-offset-0 newsletter_contacts" style="margin-top: 20px;">
+  	<h1><?php echo  get_field('newsletter_text',$post_id =$idpage);?></h1>
+	 
+  </div>
+
+  <div class="cell small-12 medium-12 large-6 small-offset-0 large-offset-0 newsletter_contacts" style="margin-top: 20px;">
+  	
 	 <?php  echo do_shortcode('[newsletter]');?>
 
   </div>
