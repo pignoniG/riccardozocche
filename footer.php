@@ -58,6 +58,11 @@ $idpage=125;
 
   </div>
 
+   <div class="cell small-12 medium-12 large-6 small-offset-6 large-offset-0 newsletter_contacts" style="margin-top: 20px;">
+  	<h1><?php echo  get_field('social_text',$post_id =$idpage);?></h1>
+	 
+  </div>
+
 </div>
 
 
