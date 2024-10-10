@@ -1,12 +1,6 @@
 $( document ).ready(
     function(){ 
 
- $('button.menu-toggle').click(function(){
-  $(".main-navigation").toggleClass("toggled");
-  $('button.menu-toggle i').toggle();
-
-
-
 var cc = 0;
     $(".footer_containers.left > *").each(function(){
         cc += $(this).outerHeight(true);
@@ -18,6 +12,14 @@ var cc = 0;
         cc += $(this).outerHeight(true);
     });
  $(".footer_containers.right").css("padding-top", 100-cc);
+ 
+ $('button.menu-toggle').click(function(){
+  $(".main-navigation").toggleClass("toggled");
+  $('button.menu-toggle i').toggle();
+
+
+
+
 
 
 });
