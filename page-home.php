@@ -49,7 +49,7 @@ get_header();
 
 
 
-        		if ($home_element_type == "home_element_project" && $home_element_project_link->ID) {
+        		if ($home_element_type == "home_element_project") {
 
         			$project_permalink = get_permalink( $home_element_project_link->ID );
         			$title = get_the_title( $home_element_project_link->ID );
