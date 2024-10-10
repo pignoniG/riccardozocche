@@ -6,6 +6,20 @@ $( document ).ready(
   $('button.menu-toggle i').toggle();
 
 
+
+var cc = 0;
+    $(".footer_containers.left > *").each(function(){
+        cc += $(this).outerHeight(true);
+    });
+ $(".footer_containers.left").css("padding-top", 100-cc);
+ $("#bottom_logo").css("margin-top", -100+cc);
+var cc = 0;
+    $(".footer_containers.right > *").each(function(){
+        cc += $(this).outerHeight(true);
+    });
+ $(".footer_containers.right").css("padding-top", 100-cc);
+
+
 });
  $(document).foundation();
 
@@ -20,4 +34,22 @@ $( document ).on( 'click', ".close-button", function () {
 } );
 
 
-$(window).on('resize', function () {});
+$(window).on('resize', function () {
+
+
+
+    var cc = 0;
+    $(".footer_containers.left > *").each(function(){
+        cc += $(this).outerHeight(true);
+    });
+ $(".footer_containers.left").css("padding-top", 100-cc);
+ $("#bottom_logo").css("margin-top", -100+cc);
+var cc = 0;
+    $(".footer_containers.right > *").each(function(){
+        cc += $(this).outerHeight(true);
+    });
+ $(".footer_containers.right").css("padding-top", 100-cc);
+
+
+
+});

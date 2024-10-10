@@ -891,6 +891,7 @@ body.page-id-125 div.newsletter_contacts
             div.footer_containers{
                 width: calc(100vw );
                 margin-top: 10px;
+                height: 100px;
               
                 display: block;
                 float: left;
