@@ -77,7 +77,6 @@ get_header();
 		</div>
 
 
-get_permalink(4)
 
 
 
