@@ -152,14 +152,16 @@ button.menu-toggle{
     /* project  general*/
 
     div.project_top_gallery{
-      width: 100%;
+      width: 100vw;
+      margin-top: -80px;
+      margin-left: -20px;
       overflow: hidden;
 
 
     }
     div.project_top_gallery_image{
-      width: calc( 100vw - 20px);
-      height: calc( 50vw - 20px);
+      width: calc( 100vw - 0px);
+      height: calc( 75vw - 0px);
       background-size: cover;
     }
 
@@ -176,8 +178,8 @@ button.menu-toggle{
         max-height: 75vh;
         width: auto;
         max-width: calc( 100vw - 40px);
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     div.conten_project_infocard{
@@ -228,6 +230,11 @@ button.menu-toggle{
     /* project  medium*/
 
         @media only screen and (max-width: 63.9375em)  {
+
+            div.project_top_gallery{
+     
+            margin-top: 0px;
+        }
              .topLogo.large{
             display: none;
             }
@@ -298,6 +305,7 @@ button.menu-toggle{
         top: 0px;
         left: 0px;
         padding: 10px;
+        padding-bottom: 0px;
         z-index: 1000;
         background: rgba(255,255,255,0.95);
         background: linear-gradient(rgba(255,255,255,0.98), 70%, transparent);
@@ -715,7 +723,7 @@ display: block;
 
 }
 div.footer_containers.left{
-padding-left: 90px;
+padding-left: 100px;
 }
 div.footer_containers.right{
     
