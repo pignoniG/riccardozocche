@@ -388,6 +388,9 @@ button.menu-toggle{
         margin-bottom: 50px;
     }
    
+    div.works_grid_item h3{
+        margin-top: 10px;
+    }
     div.home_grid_item.home_element_project,
     div.home_grid_item.home_element_product,
     div.works_grid_item,
