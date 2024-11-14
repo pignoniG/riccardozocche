@@ -71,7 +71,7 @@ get_header();
 			<h2 class="methodology_contact green_txt">
 				<?php echo get_field('methodology_call_to_action');?>
 			</h2>
-			<a href="<?php echo get_permalink(123);?>"style="font-size: 25px" class="button green"><?php echo get_field('methodology_button');?></a>
+			<a href="<?php echo apply_filters( 'wpml_permalink',get_permalink(123));?>"style="font-size: 25px" class="button green"><?php echo get_field('methodology_button');?></a>
 		
 			
 		</div>
