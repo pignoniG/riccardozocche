@@ -604,6 +604,18 @@ button.menu-toggle{
 
         @media screen and (max-width: 39.9375em) {
 
+            div.menu-menu-container ul,
+            div.menu-menu_en-container ul{
+                position: fixed;
+                
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #1A9457;;
+            }
+            
+
              div.service_grid_item{
                 width: calc( (100vw - 40px)  );
                 height: initial!important;
@@ -889,6 +901,40 @@ body.page-id-125 div.newsletter_contacts
 
         @media screen and (max-width: 39.9375em) {
 
+            .menu-toggle i{
+                z-index: 1;
+                color: #1A9457;
+            }
+
+             .menu-toggle i.fi-x{
+                color: #F4A6B4;
+             }
+
+             .main-navigation.toggled ul {
+            display: block;
+            text-align: center;
+            padding-top: 80px;
+            touch-action: none;
+
+           
+            }
+            li.menu-item.wpml-ls-slot-28.wpml-ls-item{
+                display: inline-flex;
+            }
+            .main-navigation li.menu-item{
+                font-size: 45px;
+                margin-bottom: 10px;
+            }
+            .main-navigation li.menu-item a{
+               
+                color: #F4A6B4;
+            }
+
+            .main-navigation li.menu-item.wpml-ls-item{
+                font-size: 30px;
+            }
+
+
             body.page-id-123 .tnp-subscription div.tnp-field,
             body.page-id-125  .tnp-subscription div.tnp-field{
             width: calc(100%);
@@ -1110,7 +1156,10 @@ body.page-id-125 h1,
 body.page-id-125 h2,
 body.page-id-125 h3,
 body.page-id-125 h4,
-body.page-id-125 h5{
+body.page-id-125 h5,
+body.page-id-125 .menu-toggle i.fi-list,
+body.page-id-123 .menu-toggle i.fi-list
+{
     
      color: #F4A6B4;
 }
