@@ -173,7 +173,14 @@ button.menu-toggle{
       margin-top: 40px;
       margin-bottom: 40px;
       overflow: hidden;
+      position: relative;
     }
+
+    .flickity-enabled.is-fullscreen {
+    margin: 0;
+    padding-top: 10px;
+    z-index: 1000;}
+
     div.project_bottom_gallery_image img{
         max-height: 75vh;
         width: auto;
@@ -181,6 +188,8 @@ button.menu-toggle{
         margin-right: 10px;
         margin-left: 10px;
     }
+
+
 
     div.conten_project_infocard{
       font-size: 13px;
@@ -1255,3 +1264,7 @@ div#newsletterModal.reveal div.tnp-subscription, div#newsletterModal.reveal form
 
 
 /* XXXXX fine */
+/* smaller, dark, rounded square */
+/* no circle */
+
+

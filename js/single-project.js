@@ -13,13 +13,18 @@ $( document ).ready(
 
     var $bottom_gallery = $('.project_bottom_gallery').flickity({
       // options
-      cellAlign: 'center',
+      
+      fullscreen: true,
       contain: true,
       autoPlay: true,
       wrapAround: true,
       imagesLoaded: true,
       "pageDots": false,
+      prevNextButtons: true,
     });
+
+
+
 
 
 });

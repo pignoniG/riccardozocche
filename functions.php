@@ -169,11 +169,6 @@ function zocche_scripts() {
 
 
 
-
-
-
-
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -232,8 +227,12 @@ add_action('wp_enqueue_scripts', 'services_js');
 function project_js(){
     if(is_singular( 'project' )){
     	wp_enqueue_script( 'zocche-flickity', get_template_directory_uri() . '/js/vendor/flickity.pkgd.js', array(), true );
+
+    	wp_enqueue_script( 'zocche-fullscreen', get_template_directory_uri() . '/js/fullscreen.js', array(), true );
     	
     	wp_enqueue_script( 'zocche-single-project', get_template_directory_uri() . '/js/single-project.js', array(), _S_VERSION, true );
+
+    	wp_enqueue_style( 'zocche-style-fullscreen', get_template_directory_uri() . '/css/fullscreen.css' );
 
     }
 }
