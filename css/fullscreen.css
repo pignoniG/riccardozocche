@@ -50,6 +50,7 @@ html.is-flickity-fullscreen {
 .flickity-enabled.is-fullscreen .flickity-fullscreen-button-view { display: none; }
 
 .flickity-fullscreen-button .flickity-button-icon {
+   cursor: pointer;
   position: absolute;
   width: 30px;
   height: 30px;

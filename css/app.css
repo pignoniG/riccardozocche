@@ -87,6 +87,7 @@ button.menu-toggle{
     height: 38px;
     width: 38px;
     font-size: 32px;
+    cursor: pointer;
 }
 
 
