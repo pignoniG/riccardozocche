@@ -105,7 +105,7 @@
 		<?php endif; ?>
 
 		<div class="cell small-12 medium-12 large-12 large-order-3 small-order-3" style="text-align: center; margin-top: 50px;margin-bottom: 50px;">
-			<a href="<?php echo apply_filters( 'wpml_permalink',get_permalink(117));?>"style="font-size: 25px" class="button green"><?php echo mytranslate("Torna ai Progetti | Back to Works") ;?></a>
+			<a href="<?php echo apply_filters( 'wpml_permalink',get_permalink(117));?>"style="font-size: 25px" class="button green"><?php echo mytranslate("Back to Works | Torna ai Progetti") ;?></a>
 		</div>
 
 
