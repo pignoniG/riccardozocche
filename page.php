@@ -16,6 +16,8 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+			<div class="entry-content grid-x">
+				<div  class="cell medium-12 large-6 large-offset-3">
 
 		<?php
 		while ( have_posts() ) :
@@ -27,6 +29,8 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+		</div>
+	</div>
 
 	</main><!-- #main -->
 
