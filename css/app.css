@@ -814,6 +814,19 @@ body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-field-firstname label
     display: none;
 }
 
+
+div#newsletterModal.reveal  div.tnp-field.tnp-privacy-field label,
+div#newsletterModal.reveal  div.tnp-field.tnp-privacy-field label,
+body.page-id-123 div.newsletter_contacts div.tnp-field.tnp-privacy-field label,
+body.page-id-125 div.newsletter_contacts div.tnp-field.tnp-privacy-field label{
+    display: inline-block;
+    color: #F4A6B4;
+
+}
+
+
+
+
 body.page-id-123 div.tnp-subscription ,
 body.page-id-125  div.tnp-subscription {
     max-width: initial;
